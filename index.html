@@ -7,8 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
-        .magic-font { font-family: 'Cinzel', serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght=600;700&family=Poppins:wght=300;400;500;600;700&display=swap');
+        .magic-font font-family: 'Cinzel', serif; }
         body { font-family: 'Poppins', sans-serif; background-color: #0b0f19; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
@@ -39,7 +39,7 @@
     <section class="max-w-6xl mx-auto px-4 pt-8">
         <div class="flex items-center justify-between mb-3 px-1">
             <h3 class="text-xs font-bold tracking-wider uppercase text-amber-400 flex items-center gap-2">
-                <i class="fa-solid fa-images"></i> Trip Brochure Preview
+                <i class="fa-solid fa-images"></i> Trip Brochure Preview (Actual Views)
             </h3>
             <span class="text-[11px] text-slate-400 flex items-center gap-1 italic">
                 Swipe horizontally <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -47,51 +47,63 @@
         </div>
         
         <div class="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory no-scrollbar">
-            <!-- Card 1: Log Cabin -->
+            <!-- Card 1: Actual Cabin Exterior -->
             <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
                 <div class="h-40 bg-slate-950 relative">
-                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80" alt="Davy Crockett Cabin Style">
+                    <img class="w-full h-full object-cover" src="image_agent_tag_2245738964844620718" alt="Exterior view of a modern cabin at Disney's Fort Wilderness Resort with a wooden deck">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
                 </div>
                 <div class="p-4">
-                    <h4 class="font-bold text-sm text-slate-200">Davy Crockett Log Cabins</h4>
-                    <p class="text-xs text-slate-400 mt-1">Detached forest living with private outdoor decks, personal BBQs, and fully equipped kitchens.</p>
+                    <h4 class="font-bold text-sm text-slate-200">Cabin Exterior & Private Deck</h4>
+                    <p class="text-xs text-slate-400 mt-1">Detached forest living with private patio entrances, personal parking spaces, and secluded woodland views.</p>
                 </div>
             </div>
             
-            <!-- Card 2: Disney Magic (FIXED IMAGE URL) -->
+            <!-- Card 2: Actual Cabin Interior Layout -->
             <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
                 <div class="h-40 bg-slate-950 relative">
-                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1602631985686-2bb06089d50a?auto=format&fit=crop&w=600&q=80" alt="Disneyland Fairy Castle">
+                    <img class="w-full h-full object-cover" src="image_agent_tag_2245738964844621693" alt="Interior view of a Fort Wilderness cabin showing living area, kitchen, and dining space">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
                 </div>
                 <div class="p-4">
-                    <h4 class="font-bold text-sm text-amber-300">7-Day Park Hopper Access</h4>
-                    <p class="text-xs text-slate-400 mt-1">Jump freely between Disneyland Park and Walt Disney Studios with Extra Magic Time access daily.</p>
+                    <h4 class="font-bold text-sm text-amber-300">Living Area & Full Kitchen</h4>
+                    <p class="text-xs text-slate-400 mt-1">Spacious vaulted ceilings, integrated dining layouts, modern appliances, and space-saving wall bedding systems.</p>
                 </div>
             </div>
 
-            <!-- Card 3: Tropical Pool -->
+            <!-- Card 3: Magic Kingdom Theme Parks -->
             <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
                 <div class="h-40 bg-slate-950 relative">
-                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=600&q=80" alt="Indoor Pool Style">
+                    <img class="w-full h-full object-cover" src="image_agent_tag_2245738964844624100" alt="Magic Kingdom park featuring Prince Charming Regal Carrousel lit up at dusk with Cinderella Castle in background">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
                 </div>
                 <div class="p-4">
-                    <h4 class="font-bold text-sm text-blue-400">Blue Springs Indoor Pool</h4>
-                    <p class="text-xs text-slate-400 mt-1">Heated indoor tropical water paradise complete with slides and wooden bridges for the kids.</p>
+                    <h4 class="font-bold text-sm text-blue-400">Magic Kingdom Park Highlights</h4>
+                    <p class="text-xs text-slate-400 mt-1">Step away from the tranquility of the forest and straight into classic illuminated nighttime attractions and icons.</p>
                 </div>
             </div>
 
-            <!-- Card 4: Paris Day -->
+            <!-- Card 4: Surrounding Forest Resort Grounds -->
             <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
                 <div class="h-40 bg-slate-950 relative">
-                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" alt="Paris France City View">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=600&q=80" alt="Lush tall pine tree forest trails">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+                </div>
+                <div class="p-4">
+                    <h4 class="font-bold text-sm text-emerald-400">The Surrounding Pine Woods</h4>
+                    <p class="text-xs text-slate-400 mt-1">Winding running trails, golf cart paths, and canopy shade lining the entire resort village grounds.</p>
+                </div>
+            </div>
+
+            <!-- Card 5: Paris Day Excursion Landmark -->
+            <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
+                <div class="h-40 bg-slate-950 relative">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" alt="Eiffel Tower Paris France View">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
                 </div>
                 <div class="p-4">
                     <h4 class="font-bold text-sm text-purple-400">Iconic Parisian Monuments</h4>
-                    <p class="text-xs text-slate-400 mt-1">Direct double-decker train ride to the Arc de Triomphe, Eiffel Tower walks, and beautiful scenery.</p>
+                    <p class="text-xs text-slate-400 mt-1">Direct double-decker train ride to the Arc de Triomphe, Eiffel Tower walks, and scenic river cruises.</p>
                 </div>
             </div>
         </div>
@@ -230,16 +242,16 @@
                     { time: "12:30 AM (UK)", text: "Departure from Bury. Lisette takes the initial UK driving shift while Lee sleeps with an eye-mask.", img: "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=300&q=80" },
                     { time: "06:00 AM (UK)", text: "Arrive at Folkestone Eurotunnel. Perfect 2-hour buffer window before boarding for mandatory passport control checks.", img: "https://images.unsplash.com/photo-1542397284385-60101764249a?auto=format&fit=crop&w=300&q=80" },
                     { time: "11:05 AM (FR)", text: "Welcome to France! Dynamic shift into Central European Time (+1 hour). Drive off into Calais fully refreshed.", img: "https://images.unsplash.com/photo-1503917988258-f87a78e3c995?auto=format&fit=crop&w=300&q=80" },
-                    { time: "01:30 PM (FR)", text: "Pre-Check-In. Drive directly to Davy Crockett Ranch greeting booths. Collect your MagicPass theme park tickets right through the window.", img: "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=300&q=80" }
+                    { time: "01:30 PM (FR)", text: "Pre-Check-In. Drive directly to Davy Crockett Ranch greeting booths. Collect your MagicPass theme park tickets right through the window.", img: "image_agent_tag_2245738964844620718" }
                 ]
             },
             2: {
                 title: "Day 2: Magic Kingdom Optimization & Deck Chill Out",
                 desc: "Leveraging early entry hours followed by a budget-conscious cabin BBQ break.",
                 timeline: [
-                    { time: "08:30 AM", text: "Extra Magic Time. Enter Disneyland Park 60 minutes before the public. Walk straight onto Peter Pan and Big Thunder Mountain.", img: "https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=300&q=80" },
-                    { time: "01:00 PM", text: "Midday Escape. Head back to the cabin deck. Fire up the charcoal BBQ for a budget-friendly lunch.", img: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=300&q=80" },
-                    { time: "02:35 PM", text: "Blue Springs Pool. The kids hit the tropical indoor pool and waterslides while Lee & Lisette recharge.", img: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=300&q=80" }
+                    { time: "08:30 AM", text: "Extra Magic Time. Enter Disneyland Park 60 minutes before the public. Walk straight onto Peter Pan and Big Thunder Mountain.", img: "image_agent_tag_2245738964844624100" },
+                    { time: "01:00 PM", text: "Midday Escape. Head back to the cabin deck. Fire up the charcoal BBQ for a budget-friendly lunch.", img: "image_agent_tag_2245738964844620718" },
+                    { time: "02:35 PM", text: "Blue Springs Pool. The kids hit the tropical indoor pool and waterslides while Lee & Lisette recharge.", img: "image_agent_tag_2245738964844621693" }
                 ]
             },
             3: {
@@ -256,7 +268,7 @@
                 title: "Day 4: Walt Disney Studios (Adventure World)",
                 desc: "Focusing on Pixar favorites, world-class staging, and cheap dining options outside the village.",
                 timeline: [
-                    { time: "08:30 AM", text: "Extra Magic Time. Enter the second gate early. Dash straight onto Ratatouille and Spider-Man W.E.B. Adventure.", img: "https://images.unsplash.com/photo-1602631985686-2bb06089d50a?auto=format&fit=crop&w=300&q=80" },
+                    { time: "08:30 AM", text: "Extra Magic Time. Enter the second gate early. Dash straight onto Ratatouille and Spider-Man W.E.B. Adventure.", img: "image_agent_tag_2245738964844624100" },
                     { time: "02:00 PM", text: "Mickey and the Magician. Cool down inside the premium, air-conditioned theater for a jaw-dropping stage show.", img: "https://images.unsplash.com/photo-1460881680858-30d872d5b530?auto=format&fit=crop&w=300&q=80" },
                     { time: "06:00 PM", text: "Dinner Alternate. Drive 5 minutes to Val d'Europe mall for an affordable family dinner away from park pricing.", img: "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=300&q=80" }
                 ]
@@ -265,15 +277,15 @@
                 title: "Day 5: Forest Village Relaxation & Meet & Greets",
                 desc: "A relaxed, slower morning pace designed to prevent theme park fatigue.",
                 timeline: [
-                    { time: "09:30 AM", text: "Sleep In. Enjoy a quiet, lazy forest morning. Cook up a full traditional breakfast in the cabin kitchen.", img: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=300&q=80" },
-                    { time: "11:00 AM", text: "Character Autograph Hunt. Enter the parks specifically for character meets, souvenir browsing, and photos.", img: "https://images.unsplash.com/photo-1560942485-b2a11cc13456?auto=format&fit=crop&w=300&q=80" }
+                    { time: "09:30 AM", text: "Sleep In. Enjoy a quiet, lazy forest morning. Cook up a full traditional breakfast in the cabin kitchen.", img: "image_agent_tag_2245738964844621693" },
+                    { time: "11:00 AM", text: "Character Autograph Hunt. Enter the parks specifically for character meets, souvenir browsing, and photos.", img: "image_agent_tag_2245738964844624100" }
                 ]
             },
             6: {
                 title: "Day 6: The Ultimate Favorites Encore",
                 desc: "Letting the kids control the itinerary to experience their favorite rides one last time.",
                 timeline: [
-                    { time: "08:30 AM", text: "Final Extra Magic Hour. Use this premium morning window to hit the kids' top favorite rides with zero queues.", img: "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=300&q=80" },
+                    { time: "08:30 AM", text: "Final Extra Magic Hour. Use this premium morning window to hit the kids' top favorite rides with zero queues.", img: "image_agent_tag_2245738964844624100" },
                     { time: "08:00 PM", text: "Farewell Night Spectacular. Head back in for one last night of magical drones and castle fireworks display.", img: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=300&q=80" }
                 ]
             },
@@ -281,7 +293,7 @@
                 title: "Day 7: Disney Village Shopping & Journey Home",
                 desc: "Packing up the car and clearing Calais customs smoothly.",
                 timeline: [
-                    { time: "10:00 AM", text: "Cabin Check-out. Pack the car boot, hand in cabin keys, and spend a casual afternoon at Disney Village.", img: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=300&q=80" },
+                    { time: "10:00 AM", text: "Cabin Check-out. Pack the car boot, hand in cabin keys, and spend a casual afternoon at Disney Village.", img: "image_agent_tag_2245738964844620718" },
                     { time: "06:30 PM (FR)", text: "Calais Terminal Arrival. Arrive 2 hours early to clear French customs comfortably and check-in.", img: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=300&q=80" }
                 ]
             }
