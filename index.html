@@ -15,8 +15,22 @@
         header { background-color: var(--forest-green); color: white; text-align: center; padding: 2rem; }
         .container { max-width: 800px; margin: auto; padding: 20px; }
         h2 { color: var(--forest-green); border-bottom: 2px solid var(--accent-gold); padding-bottom: 5px; margin-top: 30px; }
+        
+        .budget-table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; }
+        .budget-table th, .budget-table td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+        .budget-table th { background-color: var(--forest-green); color: white; }
+        .total-row { font-weight: bold; background-color: #eee; }
+
+        .checklist { list-style-type: none; padding: 0; }
+        .checklist li { margin-bottom: 10px; display: flex; align-items: center; }
+        .checklist li input { margin-right: 15px; transform: scale(1.5); }
+
+        .video-container { margin: 20px 0; text-align: center; }
+        .video-container iframe { width: 100%; max-width: 560px; height: 315px; border: 4px solid var(--cabin-wood); border-radius: 8px; }
+
         .timeline { border-left: 3px solid var(--cabin-wood); margin-left: 20px; padding-left: 20px; }
         .day { margin-bottom: 30px; }
+        .time { font-weight: bold; color: var(--cabin-wood); }
     </style>
 </head>
 <body>
@@ -28,61 +42,95 @@
 
 <div class="container">
 
+    <section>
+        <h2>🏕 Resort Inspiration</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/LfciriS7ooI" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section>
+        <h2>💰 Estimated Budget Summary</h2>
+        <table class="budget-table">
+            <tr><th>Item</th><th>Estimated Cost</th></tr>
+            <tr><td>Accommodation (5 nights)</td><td>£3,600.00</td></tr>
+            <tr><td>Le Shuttle (Return)</td><td>£250.00</td></tr>
+            <tr><td>Fuel (Return from Bury)</td><td>£180.00</td></tr>
+            <tr><td>French Motorway Tolls</td><td>£120.00</td></tr>
+            <tr class="total-row"><td>Total Estimate</td><td>£4,150.00</td></tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>✅ Pre-Departure Essentials</h2>
+        <ul class="checklist">
+            <li><input type="checkbox"> <strong>Warning Triangle</strong> (Legal requirement in France)</li>
+            <li><input type="checkbox"> <strong>High-Visibility Vests</strong> (Already have; store in cabin)</li>
+            <li><input type="checkbox"> <strong>Headlight Adjustment</strong> (Set to European mode)</li>
+            <li><input type="checkbox"> <strong>Passport & EES Documents</strong></li>
+            <li><input type="checkbox"> <strong>MagicPass Tickets</strong> (Print/Save to phone)</li>
+        </ul>
+    </section>
+
     <div class="day">
-        <h2>Monday Night / Tuesday: Travel & Arrival</h2>
+        <h2>🚗 Monday Night / Tuesday: Travel & Arrival</h2>
         <div class="timeline">
-            <p>00:00 Depart Bury. 05:30 Arrive Folkestone. 07:30 Board Le Shuttle.</p>
-            <p>12:15 Arrive Davy Crockett Ranch. Collect MagicPass.</p>
-            <p>Afternoon: Gentle stroll & steam train at Disneyland Park.</p>
-            <p>16:00 Check-in to new style cabin; nap & early bedtime.</p>
+            <p><span class="time">00:00</span> Depart Bury. 05:30 Arrive Folkestone. 07:30 Board Le Shuttle.</p>
+            <p><span class="time">12:15</span> Arrive Davy Crockett Ranch. Collect MagicPass.</p>
+            <p><span class="time">Afternoon</span> Gentle stroll & steam train at Disneyland Park.</p>
+            <p><span class="time">16:00</span> Check-in; nap & early bedtime.</p>
         </div>
     </div>
 
     <div class="day">
-        <h2>Wednesday: Disneyland Park (Prioritise Characters)</h2>
+        <h2>🏰 Wednesday: Disneyland Park (Characters Focus)</h2>
         <div class="timeline">
-            <p>08:30 Extra Magic Time: Big Thunder & Peter Pan.</p>
-            <p>Daytime: Focus on character meets and autographs while in Fantasyland.</p>
-            <p>17:30 Pool Session & Cabin BBQ.</p>
+            <p><span class="time">08:30</span> Extra Magic Time: Big Thunder & Peter Pan.</p>
+            <p><span class="time">Daytime</span> Focus on character meets and autographs in Fantasyland.</p>
+            <p><span class="time">17:30</span> Pool Session & Cabin BBQ.</p>
         </div>
     </div>
 
     <div class="day">
-        <h2>Thursday: Paris Sightseeing (Part 1)</h2>
+        <h2>🗼 Thursday: Paris Sightseeing (Part 1)</h2>
         <div class="timeline">
-            <p>09:30 RER A to central Paris.</p>
-            <p>Daytime: Arc de Triomphe, Champs-Élysées, Eiffel Tower, and Seine river cruise.</p>
+            <p><span class="time">09:30</span> RER A to central Paris.</p>
+            <p><span class="time">Daytime</span> Arc de Triomphe, Champs-Élysées, Eiffel Tower, and Seine river cruise.</p>
         </div>
     </div>
 
     <div class="day">
-        <h2>Friday: Walt Disney Studios (Favourites Focus)</h2>
+        <h2>🎬 Friday: Walt Disney Studios (Favourites Focus)</h2>
         <div class="timeline">
-            <p>08:30 Extra Magic Time: Crush's Coaster & Spider-Man.</p>
-            <p>Afternoon: Mickey and the Magician; ride repeats during lower queue times.</p>
-            <p>Evening: Dinner at Crockett’s Tavern.</p>
+            <p><span class="time">08:30</span> Extra Magic Time: Crush's Coaster & Spider-Man.</p>
+            <p><span class="time">Afternoon</span> Mickey and the Magician; ride repeats during lower queue times.</p>
+            <p><span class="time">Evening</span> Dinner at Crockett’s Tavern.</p>
         </div>
     </div>
 
     <div class="day">
-        <h2>Saturday: Paris Exploration (Part 2)</h2>
+        <h2>🗼 Saturday: Paris Exploration (Part 2)</h2>
         <div class="timeline">
-            <p>09:30 RER A to central Paris.</p>
-            <p>Daytime: Deep dive into Paris: explore museums, Montmartre, or additional landmarks.</p>
-            <p>Evening: Return to Disney Village for final dinner.</p>
+            <p><span class="time">09:30</span> RER A to central Paris.</p>
+            <p><span class="time">Daytime</span> Deeper exploration: Museums, Montmartre, or city landmarks.</p>
+            <p><span class="time">Evening</span> Return to Disney Village for final dinner.</p>
         </div>
     </div>
 
     <div class="day">
-        <h2>Sunday: Final Sweeps & Departure</h2>
+        <h2>🛍 Sunday: Final Sweeps & Departure</h2>
         <div class="timeline">
-            <p>09:00 Final morning ride repeats and character photos.</p>
-            <p>13:00 Drive to Val d’Europe; Auchan snack haul.</p>
-            <p>18:30 Arrive Calais. 20:30 Board Eurotunnel. 02:35 Arrive home in Bury.</p>
+            <p><span class="time">09:00</span> Final morning ride repeats and character photos.</p>
+            <p><span class="time">13:00</span> Val d’Europe lunch & Auchan snack haul.</p>
+            <p><span class="time">18:30</span> Arrive Calais. 20:30 Eurotunnel. 02:35 Home.</p>
         </div>
     </div>
 
 </div>
+
+<footer>
+    <p style="text-align: center; color: #777; font-size: 0.8rem; padding: 20px;">Safe travels from Bury to Disney!</p>
+</footer>
 
 </body>
 </html>
