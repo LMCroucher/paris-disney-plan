@@ -1,148 +1,92 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: #0b0f19 !important;">
+<html lang="en" class="bg-[#f7f3eb]">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lisette & Lee's Disney Adventure 2026</title>
-<script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
-<link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght=300;400;500;600;700&display=swap');
-.magic-font { font-family: 'Cinzel', serif; }
-body { font-family: 'Poppins', sans-serif; background-color: #0b0f19 !important; }
-.no-scrollbar::-webkit-scrollbar { display: none; }
-.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davy Crockett Ranch | 2026 Planning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+        .ranch-wood { background-color: #3d4a36; }
+        .ranch-amber { color: #b7791f; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
 </head>
-<body class="text-slate-100 min-h-screen antialiased selection:bg-blue-600 selection:text-white bg-slate-950">
-<!-- Premium Hero Section -->
-<header class="relative bg-slate-900 border-b border-slate-800 py-12 px-4 text-center overflow-hidden">
-<div class="absolute inset-0 bg-gradient-to-br from-amber-950/20 via-slate-950 to-blue-950/20 z-0"></div>
-<div class="max-w-4xl mx-auto relative z-10">
-<span class="inline-block bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-3">August 25 – August 30, 2026</span>
-<h1 class="magic-font text-3xl md:text-5xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-400 to-amber-200 drop-shadow">
-Lisette & Lee's Disney Hub
-</h1>
-<p class="text-slate-400 text-sm mt-2 max-w-md mx-auto font-light">Official Davy Crockett Ranch Frontier Strategy Portal</p>
-<div class="grid grid-cols-4 gap-2 max-w-sm mx-auto mt-6 bg-slate-950/80 backdrop-blur border border-slate-800 p-4 rounded-xl shadow-xl">
-<div class="text-center"><span id="days" class="block text-2xl font-bold text-amber-400 magic-font">--</span><span class="text-[9px] text-slate-400 uppercase tracking-widest font-semibold">Days</span></div>
-<div class="text-center"><span id="hours" class="block text-2xl font-bold text-slate-200 magic-font">--</span><span class="text-[9px] text-slate-400 uppercase tracking-widest font-semibold">Hours</span></div>
-<div class="text-center"><span id="mins" class="block text-2xl font-bold text-slate-200 magic-font">--</span><span class="text-[9px] text-slate-400 uppercase tracking-widest font-semibold">Mins</span></div>
-<div class="text-center"><span id="secs" class="block text-2xl font-bold text-blue-400 magic-font">--</span><span class="text-[9px] text-slate-400 uppercase tracking-widest font-semibold">Secs</span></div>
-</div>
-</div>
-</header>
-<main class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
-<!-- Sidebar: Cost Matrix Management -->
-<div class="lg:col-span-1 space-y-6">
-<div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-xl">
-<h3 class="text-base font-bold mb-1 flex items-center gap-2"><i class="fa-solid fa-calculator text-amber-400"></i> Cost Tracker</h3>
-<p class="text-xs text-slate-400 mb-4">Tap to toggle items as paid. Budget updates dynamically.</p>
-<div class="space-y-2.5">
-<div onclick="toggleItem(this, 3672.48)" class="p-3 bg-slate-950 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700 transition flex justify-between items-center group">
-<div class="text-[11px] pr-2"><span class="font-semibold block text-slate-200 group-hover:text-blue-400 transition">🏰 Disney Base Package</span><span class="text-slate-500">5 Nts Davy Crockett + Access</span></div>
-<span class="text-blue-400 font-bold text-xs shrink-0">£3,672.48</span>
-</div>
-<div onclick="toggleItem(this, 180)" class="p-3 bg-slate-950 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700 transition flex justify-between items-center group">
-<div class="text-[11px] pr-2"><span class="font-semibold block text-slate-200 group-hover:text-blue-400 transition">🚂 Eurotunnel Shuttle</span><span class="text-slate-500">Folkestone ↔ Calais Return</span></div>
-<span class="text-blue-400 font-bold text-xs shrink-0">£180.00</span>
-</div>
-<div onclick="toggleItem(this, 140)" class="p-3 bg-slate-950 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700 transition flex justify-between items-center group">
-<div class="text-[11px] pr-2"><span class="font-semibold block text-slate-200 group-hover:text-blue-400 transition">⛽ Fuel (700 miles)</span><span class="text-slate-500">Projected travel fuel</span></div>
-<span class="text-blue-400 font-bold text-xs shrink-0">£140.00</span>
-</div>
-<div onclick="toggleItem(this, 40)" class="p-3 bg-slate-950 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700 transition flex justify-between items-center group">
-<div class="text-[11px] pr-2"><span class="font-semibold block text-slate-200 group-hover:text-blue-400 transition">🛣️ Highway Tolls</span><span class="text-slate-500">French Motorway Fees</span></div>
-<span class="text-blue-400 font-bold text-xs shrink-0">£40.00</span>
-</div>
-<div onclick="toggleItem(this, 130)" class="p-3 bg-slate-950 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700 transition flex justify-between items-center group">
-<div class="text-[11px] pr-2"><span class="font-semibold block text-slate-200 group-hover:text-blue-400 transition">🚊 Paris Transit Base</span><span class="text-slate-500">Zone 1-5 Passes + Cruise</span></div>
-<span class="text-blue-400 font-bold text-xs shrink-0">£130.00</span>
-</div>
-<div onclick="toggleItem(this, 350)" class="p-3 bg-slate-950 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700 transition flex justify-between items-center group">
-<div class="text-[11px] pr-2"><span class="font-semibold block text-slate-200 group-hover:text-blue-400 transition">🍕 Food & Cabin Groceries</span><span class="text-slate-500">Meals & Supplies</span></div>
-<span class="text-blue-400 font-bold text-xs shrink-0">£350.00</span>
-</div>
-</div>
-<div class="mt-4 pt-4 border-t border-slate-800">
-<h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">Paris Day Upgrade</h4>
-<select id="parisAddon" onchange="calculateBudget()" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-2.5 text-xs text-slate-200 focus:ring-1 focus:ring-blue-500 focus:outline-none">
-<option value="0">Base Plan (Sightseeing & Cruise Only) - +£0</option>
-<option value="55">🗼 Eiffel Tower 2nd Floor Lifts - +£55</option>
-<option value="85">🗼 Eiffel Tower Summit Glass Lifts - +£85</option>
-<option value="27">🏛️ Arc de Triomphe Rooftop - +£27</option>
-</select>
-</div>
-<div class="mt-4 p-4 bg-slate-950 rounded-xl border border-slate-800 text-center">
-<div class="text-[10px] text-slate-400 uppercase tracking-widest font-medium">Estimated Grand Total</div>
-<div id="totalDisplay" class="text-2xl font-black text-emerald-400 magic-font mt-0.5">£4,512.48</div>
-<div class="text-[10px] text-slate-500 mt-1">Paid Tracked Balance: <span id="paidDisplay" class="font-bold text-slate-300">£0</span></div>
-</div>
-</div>
-</div>
-<!-- Right Content: Day-by-day Itinerary -->
-<div class="lg:col-span-2 space-y-4">
-<div class="bg-slate-900 p-1.5 rounded-xl border border-slate-800 overflow-x-auto flex gap-1 no-scrollbar">
-<button onclick="switchDay(1)" id="tab-1" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap bg-blue-600 text-white">Day 1</button>
-<button onclick="switchDay(2)" id="tab-2" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 2</button>
-<button onclick="switchDay(3)" id="tab-3" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 3</button>
-<button onclick="switchDay(4)" id="tab-4" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 4</button>
-<button onclick="switchDay(5)" id="tab-5" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 5</button>
-<button onclick="switchDay(6)" id="tab-6" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 6</button>
-</div>
-<div id="itineraryContainer" class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4"></div>
-</div>
-</main>
-<script>
-const launchDate = new Date("August 25, 2026 00:30:00").getTime();
-function updateCountdown() {
-const now = new Date().getTime();
-const timeWindow = launchDate - now;
-if (timeWindow > 0) {
-const d = Math.floor(timeWindow / (1000 * 60 * 60 * 24));
-const h = Math.floor((timeWindow % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-const m = Math.floor((timeWindow % (1000 * 60 * 60)) / (1000 * 60));
-const s = Math.floor((timeWindow % (1000 * 60)) / (1000));
-document.getElementById("days").innerText = String(d).padStart(2, '0');
-document.getElementById("hours").innerText = String(h).padStart(2, '0');
-document.getElementById("mins").innerText = String(m).padStart(2, '0');
-document.getElementById("secs").innerText = String(s).padStart(2, '0');
-}
-}
-setInterval(updateCountdown, 1000);
-updateCountdown();
-let activePaidSummary = 0;
-function toggleItem(el, cost) {
-const checked = el.classList.toggle('border-emerald-500');
-el.classList.toggle('bg-emerald-950/20');
-activePaidSummary += checked ? cost : -cost;
-document.getElementById("paidDisplay").innerText = "£" + activePaidSummary.toLocaleString(undefined, {minimumFractionDigits: 2});
-}
-function calculateBudget() {
-let baseRate = 4512.48;
-let currentSelection = parseFloat(document.getElementById("parisAddon").value);
-document.getElementById("totalDisplay").innerText = "£" + (baseRate + currentSelection).toLocaleString(undefined, {minimumFractionDigits: 2});
-}
-const daysData = {
-1: { title: "Day 1: Tuesday - Arrival", desc: "Outbound logistics and check-in.", timeline: [{ time: "12:30 AM", text: "Depart Bury", icon: "fa-car" }, { time: "02:00 PM", text: "Davy Crockett Check-In", icon: "fa-key" }] },
-2: { title: "Day 2: Wednesday - Magic Kingdom", desc: "Early entry park day.", timeline: [{ time: "08:30 AM", text: "Extra Magic Time", icon: "fa-fort-awesome" }, { time: "03:00 PM", text: "Pool Session", icon: "fa-water-ladder" }] },
-3: { title: "Day 3: Thursday - Paris City Trip", desc: "Exploration of the capital.", timeline: [{ time: "09:00 AM", text: "RER Train to Paris", icon: "fa-train" }, { time: "02:30 PM", text: "River Cruise", icon: "fa-ship" }] },
-4: { title: "Day 4: Friday - Adventure Studios", desc: "Studio park immersion.", timeline: [{ time: "08:30 AM", text: "Avengers/Ratatouille", icon: "fa-mask" }, { time: "06:00 PM", text: "Val d'Europe Dinner", icon: "fa-utensils" }] },
-5: { title: "Day 5: Saturday - Finale", desc: "Encore rides and fireworks.", timeline: [{ time: "08:30 AM", text: "Favorites Encore", icon: "fa-star" }, { time: "08:30 PM", text: "Night Spectacular", icon: "fa-cloud-moon-flash" }] },
-6: { title: "Day 6: Sunday - Homeward Bound", desc: "Checkout and travel.", timeline: [{ time: "10:00 AM", text: "Check-out", icon: "fa-bag-shopping" }, { time: "06:30 PM", text: "Eurotunnel Home", icon: "fa-square-check" }] }
-};
-function switchDay(dayId) {
-document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('bg-blue-600', 'text-white'));
-document.getElementById('tab-' + dayId).classList.add('bg-blue-600', 'text-white');
-const container = document.getElementById('itineraryContainer');
-const data = daysData[dayId];
-let htmlBlock = <div class="border-b border-slate-800 pb-3"><h3 class="text-base font-bold text-amber-400">${data.title}</h3><p class="text-xs text-slate-400">${data.desc}</p></div><div class="space-y-4 pt-2">;
-data.timeline.forEach(item => {
-htmlBlock += <div class="flex items-start gap-4 p-3 rounded-xl bg-slate-950/40 border border-slate-800/30"> <div class="w-12 h-12 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0 shadow-md"> <i class="fa-solid ${item.icon} text-lg text-slate-400"></i> </div> <div><div class="font-mono text-[9px] text-blue-400 font-bold">${item.time}</div><p class="text-xs text-slate-300">${item.text}</p></div> </div>;
-});
-container.innerHTML = htmlBlock + "</div>";
-}
-switchDay(1);
-</script>
+<body class="text-slate-800">
+
+    <header class="ranch-wood text-white py-16 px-6 text-center">
+        <h1 class="font-serif text-5xl mb-2">Disney Davy Crockett Ranch</h1>
+        <p class="text-amber-500 font-medium tracking-[0.2em] uppercase text-xs">Strategy & Logistics Portal | August 2026</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-10 px-6 grid lg:grid-cols-3 gap-8">
+        
+        <div class="lg:col-span-1 space-y-8">
+            <h2 class="text-2xl font-serif ranch-amber mb-4 border-b border-amber-800 pb-2">Property Features</h2>
+            <div class="space-y-4">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+                    <div class="h-40 bg-gray-300 flex items-center justify-center text-gray-500"></div>
+                    <div class="p-4"><h4 class="font-bold">New Standard Cabin</h4><p class="text-xs text-gray-600 mt-1">Junior Woodchucks themed woodland retreat.</p></div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+                    <div class="h-40 bg-gray-300 flex items-center justify-center text-gray-500"></div>
+                    <div class="p-4"><h4 class="font-bold">Cabin – Near Facilities</h4><p class="text-xs text-gray-600 mt-1">Prime proximity to pool and tavern.</p></div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                <h3 class="font-bold mb-4 flex items-center gap-2 text-sm uppercase tracking-wider"><i class="fa-solid fa-calculator ranch-amber"></i> Financial Matrix</h3>
+                <div class="space-y-2">
+                    <div onclick="toggleItem(this, 3672.48)" class="p-3 bg-gray-50 rounded border cursor-pointer hover:bg-gray-100 flex justify-between text-xs"><span>Disney Base Pkg</span><span class="font-bold">£3,672.48</span></div>
+                    <div onclick="toggleItem(this, 180)" class="p-3 bg-gray-50 rounded border cursor-pointer hover:bg-gray-100 flex justify-between text-xs"><span>Eurotunnel</span><span class="font-bold">£180.00</span></div>
+                    <div onclick="toggleItem(this, 180)" class="p-3 bg-gray-50 rounded border cursor-pointer hover:bg-gray-100 flex justify-between text-xs"><span>Fuel & Tolls</span><span class="font-bold">£180.00</span></div>
+                </div>
+                <div class="mt-6 pt-4 border-t text-center">
+                    <div id="totalDisplay" class="text-3xl font-serif ranch-amber">£4,512.48</div>
+                    <div class="text-[10px] text-gray-400 mt-1 uppercase">Paid: <span id="paidDisplay" class="font-bold text-gray-700">£0</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:col-span-2">
+            <h2 class="text-2xl font-serif ranch-amber mb-6 border-b border-amber-800 pb-2">Full Itinerary</h2>
+            <div class="flex gap-2 overflow-x-auto pb-4 no-scrollbar">
+                {[1,2,3,4,5,6].map(d => `<button onclick="switchDay(${d})" id="tab-${d}" class="tab-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 text-sm font-semibold hover:bg-[#3d4a36] hover:text-white transition">Day ${d}</button>`).join('')}
+            </div>
+            <div id="itineraryContainer" class="bg-white p-8 rounded-xl shadow-md border border-gray-200 min-h-[400px]"></div>
+        </div>
+    </main>
+
+    <script>
+        let activePaidSummary = 0;
+        function toggleItem(el, cost) {
+            const checked = el.classList.toggle('border-amber-600');
+            el.classList.toggle('bg-amber-50');
+            activePaidSummary += checked ? cost : -cost;
+            document.getElementById("paidDisplay").innerText = "£" + activePaidSummary.toLocaleString(undefined, {minimumFractionDigits: 2});
+        }
+
+        const daysData = {
+            1: { title: "Tuesday: Outbound & Setup", timeline: ["12:30 AM: Depart Bury", "06:00 AM: Folkestone Eurotunnel", "11:05 AM: Arrive France", "02:00 PM: Check-In"] },
+            2: { title: "Wednesday: Magic Kingdom", timeline: ["08:30 AM: Extra Magic Time", "01:00 PM: Cabin BBQ", "03:00 PM: Blue Springs Pool"] },
+            3: { title: "Thursday: Paris Exploration", timeline: ["09:00 AM: RER A Train to Paris", "10:15 AM: Arc de Triomphe", "02:30 PM: River Cruise"] },
+            4: { title: "Friday: Disney Studios", timeline: ["08:30 AM: Avengers & Ratatouille", "02:00 PM: Stage Show", "06:00 PM: Val d'Europe Dinner"] },
+            5: { title: "Saturday: Finale Encore", timeline: ["08:30 AM: Favorite Rides", "02:30 PM: Character Autographs", "08:30 PM: Fireworks"] },
+            6: { title: "Sunday: Departure", timeline: ["10:00 AM: Checkout", "06:30 PM: Eurotunnel Return"] }
+        };
+
+        function switchDay(dayId) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.replace('bg-[#3d4a36]', 'bg-gray-200') || b.classList.replace('text-white', 'text-gray-700'));
+            document.getElementById('tab-' + dayId).classList.replace('bg-gray-200', 'bg-[#3d4a36]');
+            document.getElementById('tab-' + dayId).classList.replace('text-gray-700', 'text-white');
+            
+            const data = daysData[dayId];
+            document.getElementById('itineraryContainer').innerHTML = `<h3 class="font-serif text-xl ranch-amber mb-6">${data.title}</h3>` + 
+                data.timeline.map(t => `<div class="p-4 mb-3 bg-gray-50 border-l-4 border-amber-600 rounded text-sm">${t}</div>`).join('');
+        }
+        switchDay(1);
+    </script>
 </body>
 </html>
