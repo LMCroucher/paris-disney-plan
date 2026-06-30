@@ -12,21 +12,21 @@
         body { font-family: 'Poppins', sans-serif; background-color: #0b0f19 !important; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        img { min-height: 40px; background-color: #1e293b; }
     </style>
 </head>
 <body class="text-slate-100 min-h-screen antialiased selection:bg-blue-600 selection:text-white bg-slate-950">
 
-    <!-- Premium Hero Section -->
-    <header class="relative bg-slate-900 border-b border-slate-800 bg-cover bg-center py-12 px-4 text-center" style="background-image: linear-gradient(to bottom, rgba(11, 15, 25, 0.85), rgba(11, 15, 25, 0.98)), url('https://images.unsplash.com/photo-1513635269975-59663e0ca1ad?auto=format&fit=crop&w=1200&q=80');">
-        <div class="max-w-4xl mx-auto">
-            <span class="inline-block bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-3">August 24 – August 30, 2026</span>
+    <!-- Premium Hero Section with Wilderness Styling -->
+    <header class="relative bg-slate-900 border-b border-slate-800 py-12 px-4 text-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-amber-950/20 via-slate-950 to-blue-950/20 z-0"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="inline-block bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-3">August 25 – August 30, 2026</span>
             <h1 class="magic-font text-3xl md:text-5xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-400 to-amber-200 drop-shadow">
                 Lisette & Lee's Disney Hub
             </h1>
-            <p class="text-slate-400 text-sm mt-2 max-w-md mx-auto font-light">Davy Crockett Ranch Self-Catering Road Trip Strategy</p>
+            <p class="text-slate-400 text-sm mt-2 max-w-md mx-auto font-light">Official Davy Crockett Ranch Frontier Strategy Portal</p>
             
-            <!-- Real-Time Javascript Countdown -->
+            <!-- Real-Time Javascript Countdown (Targeting Tuesday Arrival Window) -->
             <div class="grid grid-cols-4 gap-2 max-w-sm mx-auto mt-6 bg-slate-950/80 backdrop-blur border border-slate-800 p-4 rounded-xl shadow-xl">
                 <div class="text-center"><span id="days" class="block text-2xl font-bold text-amber-400 magic-font">--</span><span class="text-[9px] text-slate-400 uppercase tracking-widest font-semibold">Days</span></div>
                 <div class="text-center"><span id="hours" class="block text-2xl font-bold text-slate-200 magic-font">--</span><span class="text-[9px] text-slate-400 uppercase tracking-widest font-semibold">Hours</span></div>
@@ -36,11 +36,11 @@
         </div>
     </header>
 
-    <!-- Brochure Style Horizontal Image Swipe Gallery -->
+    <!-- Brochure Style Horizontal Vector Illustration Cards -->
     <section class="max-w-6xl mx-auto px-4 pt-8">
         <div class="flex items-center justify-between mb-3 px-1">
             <h3 class="text-xs font-bold tracking-wider uppercase text-amber-400 flex items-center gap-2">
-                <i class="fa-solid fa-images"></i> Davy Crockett Ranch & Park Preview
+                <i class="fa-solid fa-map-location-dot"></i> Disney Property Feature Layout
             </h3>
             <span class="text-[11px] text-slate-400 flex items-center gap-1 italic">
                 Swipe horizontally <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -48,51 +48,55 @@
         </div>
         
         <div class="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory no-scrollbar">
-            <!-- Card 1: Davy Crockett Cabin Style -->
-            <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
-                <div class="h-40 bg-slate-950 relative">
-                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=600&q=80" onerror="this.style.display='none'" alt="Davy Crockett Timber Cabin Layout">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+            <!-- Card 1: Reimagined Junior Woodchucks Cabins -->
+            <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl flex flex-col justify-between">
+                <div class="h-40 bg-gradient-to-br from-amber-900/30 to-slate-950 relative flex flex-col items-center justify-center p-4 text-center border-b border-slate-800/50">
+                    <i class="fa-solid fa-campground text-4xl text-amber-400 drop-shadow mb-2"></i>
+                    <span class="text-[10px] font-mono tracking-widest text-slate-400 uppercase">Property Configuration</span>
+                    <div class="text-xs font-bold text-amber-200 mt-0.5">Junior Woodchucks Cabin Layout</div>
                 </div>
-                <div class="p-4">
-                    <h4 class="font-bold text-sm text-slate-200">Trapper Tribe Cabin Style</h4>
-                    <p class="text-xs text-slate-400 mt-1">Nestled deep within quiet, peaceful French woodland. Features your own private wooden deck, outdoor charcoal BBQ grill, and private driveway parking spaces right outside.</p>
+                <div class="p-4 bg-slate-900/40">
+                    <h4 class="font-bold text-sm text-slate-200">Woodland Bungalow Setup</h4>
+                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">Redesigned woodland footprint featuring playful nods to Donald, Daisy, and the Junior Woodchucks. Includes 2 private bathrooms, a complete self-catering kitchen, and outdoor deck space with a private charcoal BBQ pit.</p>
                 </div>
             </div>
             
-            <!-- Card 2: Indoor Heated Pool Area -->
-            <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
-                <div class="h-40 bg-slate-950 relative">
-                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=600&q=80" onerror="this.style.display='none'" alt="Indoor Heated Pool Layout">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+            <!-- Card 2: Blue Springs Indoor Heated Pool Layout -->
+            <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl flex flex-col justify-between">
+                <div class="h-40 bg-gradient-to-br from-blue-900/30 to-slate-950 relative flex flex-col items-center justify-center p-4 text-center border-b border-slate-800/50">
+                    <i class="fa-solid fa-water-ladder text-4xl text-blue-400 drop-shadow mb-2"></i>
+                    <span class="text-[10px] font-mono tracking-widest text-slate-400 uppercase">Recreation Village</span>
+                    <div class="text-xs font-bold text-blue-200 mt-0.5">Blue Springs Indoor Pool</div>
                 </div>
-                <div class="p-4">
-                    <h4 class="font-bold text-sm text-amber-300">Heated Indoor Pool Village</h4>
-                    <p class="text-xs text-slate-400 mt-1">Davy Crockett's massive indoor tropical pool complex. Includes a massive wooden bridge, rushing waterfalls, water slides, and hot tubs perfect for winding down after park days.</p>
-                </div>
-            </div>
-
-            <!-- Card 3: Disneyland Paris Park -->
-            <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
-                <div class="h-40 bg-slate-950 relative">
-                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=600&q=80" onerror="this.style.display='none'" alt="Disneyland Paris Castle Vibe">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
-                </div>
-                <div class="p-4">
-                    <h4 class="font-bold text-sm text-blue-400">Disneyland Park Gate</h4>
-                    <p class="text-xs text-slate-400 mt-1">Just a short 12-minute drive from your forest cabin retreat. Home to Big Thunder Mountain, Peter Pan's Flight, Hyperspace Mountain, and the iconic pink Sleeping Beauty Castle.</p>
+                <div class="p-4 bg-slate-900/40">
+                    <h4 class="font-bold text-sm text-amber-300">Tropical Swimming Complex</h4>
+                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">Davy Crockett's massive heated indoor oasis. Complete with a signature overhead wooden bridge structure, rushing therapeutic waterfalls, fast water slides, and whirlpool hot tubs.</p>
                 </div>
             </div>
 
-            <!-- Card 4: Walt Disney Studios / Adventure World -->
-            <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
-                <div class="h-40 bg-slate-950 relative">
-                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1460881680858-30d872d5b530?auto=format&fit=crop&w=600&q=80" onerror="this.style.display='none'" alt="Walt Disney Studios Pixar Studio View">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+            <!-- Card 3: Disneyland Park Gate Integration -->
+            <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl flex flex-col justify-between">
+                <div class="h-40 bg-gradient-to-br from-purple-900/30 to-slate-950 relative flex flex-col items-center justify-center p-4 text-center border-b border-slate-800/50">
+                    <i class="fa-solid fa-fort-awesome text-4xl text-purple-400 drop-shadow mb-2"></i>
+                    <span class="text-[10px] font-mono tracking-widest text-slate-400 uppercase">Park Hub Access</span>
+                    <div class="text-xs font-bold text-purple-200 mt-0.5">Disneyland Park Gate</div>
                 </div>
-                <div class="p-4">
-                    <h4 class="font-bold text-sm text-purple-400">Walt Disney Studios Park</h4>
-                    <p class="text-xs text-slate-400 mt-1">The home of Hollywood action. Head here first during early entry hours for Marvel Avengers Campus, the high-speed RC Racer drop tower, and the immersive Ratatouille 4D experience.</p>
+                <div class="p-4 bg-slate-900/40">
+                    <h4 class="font-bold text-sm text-blue-400">Classic Theme Attractions</h4>
+                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">A fast 15-minute drive from the cabin to free guest parking. Instant access to early Extra Magic Time slots for Big Thunder Mountain and the pink castle illuminations.</p>
+                </div>
+            </div>
+
+            <!-- Card 4: Disney Adventure World (Studios) Layout -->
+            <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl flex flex-col justify-between">
+                <div class="h-40 bg-gradient-to-br from-emerald-900/30 to-slate-950 relative flex flex-col items-center justify-center p-4 text-center border-b border-slate-800/50">
+                    <i class="fa-solid fa-clapperboard text-4xl text-emerald-400 drop-shadow mb-2"></i>
+                    <span class="text-[10px] font-mono tracking-widest text-slate-400 uppercase">Production Hub</span>
+                    <div class="text-xs font-bold text-emerald-200 mt-0.5">Disney Adventure World</div>
+                </div>
+                <div class="p-4 bg-slate-900/40">
+                    <h4 class="font-bold text-sm text-purple-400">Pixar & Marvel Studios</h4>
+                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">The second park sector layout. Optimised for morning dashes straight into the Avengers Campus, Toy Story land drop towers, and the Ratatouille 4D sensory experience.</p>
                 </div>
             </div>
         </div>
@@ -101,16 +105,16 @@
     <!-- Interactive Workspace Grid Dashboard -->
     <main class="max-w-6xl mx-auto px-4 py-4 grid grid-cols-1 lg:grid-cols-3 gap-6">
         
-        <!-- Left Sidebar: Cost Matrix Management -->
+        <!-- Left Sidebar: Cost Matrix Management (Recalibrated for 5 Nights) -->
         <div class="lg:col-span-1 space-y-6">
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-xl">
                 <h3 class="text-base font-bold mb-1 flex items-center gap-2"><i class="fa-solid fa-calculator text-amber-400"></i> Cost Tracker</h3>
                 <p class="text-xs text-slate-400 mb-4">Tap items to check them off as paid. Budget updates dynamically.</p>
                 
                 <div class="space-y-2.5">
-                    <div onclick="toggleItem(this, 2720)" class="p-3 bg-slate-950 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700 transition flex justify-between items-center group">
-                        <div class="text-[11px] pr-2"><span class="font-semibold block text-slate-200 group-hover:text-blue-400 transition">🏰 Disney Base Package</span><span class="text-slate-500">6 Nts Davy Crockett + 7-Day Tickets</span></div>
-                        <span class="text-blue-400 font-bold text-xs shrink-0">£2,720</span>
+                    <div onclick="toggleItem(this, 2350)" class="p-3 bg-slate-950 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700 transition flex justify-between items-center group">
+                        <div class="text-[11px] pr-2"><span class="font-semibold block text-slate-200 group-hover:text-blue-400 transition">🏰 Disney Base Package</span><span class="text-slate-500">5 Nts Davy Crockett + Park Access</span></div>
+                        <span class="text-blue-400 font-bold text-xs shrink-0">£2,350</span>
                     </div>
                     <div onclick="toggleItem(this, 180)" class="p-3 bg-slate-950 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700 transition flex justify-between items-center group">
                         <div class="text-[11px] pr-2"><span class="font-semibold block text-slate-200 group-hover:text-blue-400 transition">🚂 Eurotunnel Shuttle</span><span class="text-slate-500">Folkestone ↔ Calais Return Slot</span></div>
@@ -124,9 +128,9 @@
                         <div class="text-[11px] pr-2"><span class="font-semibold block text-slate-200 group-hover:text-blue-400 transition">🚊 Paris Transit Base</span><span class="text-slate-500">Zone 1-5 Passes + Boat Tour</span></div>
                         <span class="text-blue-400 font-bold text-xs shrink-0">£130</span>
                     </div>
-                    <div onclick="toggleItem(this, 420)" class="p-3 bg-slate-950 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700 transition flex justify-between items-center group">
+                    <div onclick="toggleItem(this, 350)" class="p-3 bg-slate-950 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700 transition flex justify-between items-center group">
                         <div class="text-[11px] pr-2"><span class="font-semibold block text-slate-200 group-hover:text-blue-400 transition">🍕 Food & Cabin Groceries</span><span class="text-slate-500">Supermarket runs + park dining</span></div>
-                        <span class="text-blue-400 font-bold text-xs shrink-0">£420</span>
+                        <span class="text-blue-400 font-bold text-xs shrink-0">£350</span>
                     </div>
                 </div>
 
@@ -144,23 +148,22 @@
                 <!-- Bottom Metrics Output Block -->
                 <div class="mt-4 p-4 bg-slate-950 rounded-xl border border-slate-800 text-center">
                     <div class="text-[10px] text-slate-400 uppercase tracking-widest font-medium">Calculated Budget Total</div>
-                    <div id="totalDisplay" class="text-2xl font-black text-emerald-400 magic-font mt-0.5">£3,575</div>
+                    <div id="totalDisplay" class="text-2xl font-black text-emerald-400 magic-font mt-0.5">£3,135</div>
                     <div class="text-[10px] text-slate-500 mt-1">Paid Tracked Balance: <span id="paidDisplay" class="font-bold text-slate-300">£0</span></div>
                 </div>
             </div>
         </div>
 
-        <!-- Right Content: Day-by-day Segment Panels -->
+        <!-- Right Content: Day-by-day Segment Panels (Calibrated for Tues-Sun) -->
         <div class="lg:col-span-2 space-y-4">
             <!-- Day Selector Tab Bar Navigation -->
             <div class="bg-slate-900 p-1.5 rounded-xl border border-slate-800 overflow-x-auto flex gap-1 no-scrollbar">
-                <button onclick="switchDay(1)" id="tab-1" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap bg-blue-600 text-white">Day 1: Mon</button>
-                <button onclick="switchDay(2)" id="tab-2" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 2: Tue</button>
-                <button onclick="switchDay(3)" id="tab-3" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 3: Wed</button>
-                <button onclick="switchDay(4)" id="tab-4" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 4: Thu</button>
-                <button onclick="switchDay(5)" id="tab-5" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 5: Fri</button>
-                <button onclick="switchDay(6)" id="tab-6" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 6: Sat</button>
-                <button onclick="switchDay(7)" id="tab-7" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 7: Sun</button>
+                <button onclick="switchDay(1)" id="tab-1" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap bg-blue-600 text-white">Day 1: Tue</button>
+                <button onclick="switchDay(2)" id="tab-2" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 2: Wed</button>
+                <button onclick="switchDay(3)" id="tab-3" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 3: Thu</button>
+                <button onclick="switchDay(4)" id="tab-4" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 4: Fri</button>
+                <button onclick="switchDay(5)" id="tab-5" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 5: Sat</button>
+                <button onclick="switchDay(6)" id="tab-6" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 6: Sun</button>
             </div>
 
             <!-- Main Timed Itinerary Content Container -->
@@ -172,12 +175,12 @@
 
     <!-- Footer Space -->
     <footer class="max-w-6xl mx-auto px-4 py-6 text-center text-xs text-slate-600 border-t border-slate-900 mt-6">
-        <p>Lee & Lisette's Shared Travel Portal • Real-Time Dynamic Rendering</p>
+        <p>Lee & Lisette's Shared Travel Portal • Responsive Interactive Engine</p>
     </footer>
 
     <script>
-        // Exact 2026 Live Countdown Configuration Logic
-        const launchDate = new Date("August 24, 2026 00:30:00").getTime();
+        // Exact 2026 Live Countdown Configuration Logic (Targeting Tuesday, Aug 25)
+        const launchDate = new Date("August 25, 2026 00:30:00").getTime();
         
         function updateCountdown() {
             const now = new Date().getTime();
@@ -217,73 +220,66 @@
         }
 
         function calculateBudget() {
-            let baseRate = 3575;
+            let baseRate = 3135;
             let currentSelection = parseInt(document.getElementById("parisAddon").value);
             document.getElementById("totalDisplay").innerText = "£" + (baseRate + currentSelection).toLocaleString();
         }
 
-        // Timeline dataset mapping out the exact road trip route
+        // Timeline dataset using responsive vector icons for flawless loading
         const daysData = {
             1: {
-                title: "Day 1: The Midnight Run & Outbound Border Crossings",
-                desc: "Transit logistics completely mapped out to handle EU biometric check-ins seamlessly.",
+                title: "Day 1: Tuesday - Outbound Crossings & Cabin Base Camp Setup",
+                desc: "Transit logistics mapped out to handle EU biometric check-ins seamlessly.",
                 timeline: [
-                    { time: "12:30 AM (UK)", text: "Departure from Bury. Lisette takes the initial UK driving shift while Lee sleeps with an eye-mask.", img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=300&q=80" },
-                    { time: "06:00 AM (UK)", text: "Arrive at Folkestone Eurotunnel. Perfect 2-hour buffer window before boarding for mandatory passport control checks.", img: "https://images.unsplash.com/photo-1447433589675-4adf56626997?auto=format&fit=crop&w=300&q=80" },
-                    { time: "11:05 AM (FR)", text: "Welcome to France! Dynamic shift into Central European Time (+1 hour). Drive off into Calais fully refreshed.", img: "https://images.unsplash.com/photo-1541417904950-b855846fe074?auto=format&fit=crop&w=300&q=80" },
-                    { time: "01:30 PM (FR)", text: "Pre-Check-In. Drive directly to the Davy Crockett Ranch welcome cabins. Collect your MagicPass theme park tickets right through the window.", img: "https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=300&q=80" }
+                    { time: "12:30 AM (UK)", text: "Departure from Bury. Lisette takes the initial UK driving shift while Lee rests.", icon: "fa-car" },
+                    { time: "06:00 AM (UK)", text: "Arrive at Folkestone Eurotunnel. Perfect 2-hour buffer window before boarding for mandatory passport control checks.", icon: "fa-train-subway" },
+                    { time: "11:05 AM (FR)", text: "Welcome to France! Dynamic shift into Central European Time (+1 hour). Drive off into Calais fully refreshed.", icon: "fa-passport" },
+                    { time: "02:00 PM (FR)", text: "Davy Crockett Check-In. Drive directly to the welcome cabins. Collect your MagicPass theme park tickets right through the window.", icon: "fa-key" }
                 ]
             },
             2: {
-                title: "Day 2: Magic Kingdom Optimization & Deck Chill Out",
+                title: "Day 2: Wednesday - Magic Kingdom Optimization & Deck Chill Out",
                 desc: "Leveraging early entry hours followed by a budget-conscious cabin BBQ break.",
                 timeline: [
-                    { time: "08:30 AM", text: "Extra Magic Time. Enter Disneyland Park 60 minutes before the public. Walk straight onto Peter Pan and Big Thunder Mountain.", img: "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=300&q=80" },
-                    { time: "01:00 PM", text: "Midday Escape. Head back to the Davy Crockett cabin deck. Fire up the charcoal BBQ for a budget-friendly lunch.", img: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=300&q=80" },
-                    { time: "02:35 PM", text: "Heated Pool Break. Head down to the massive timber pool village to enjoy the water slide and waterfalls.", img: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=300&q=80" }
+                    { time: "08:30 AM", text: "Extra Magic Time. Enter Disneyland Park 60 minutes before the public. Walk straight onto Peter Pan and Big Thunder Mountain.", icon: "fa-fort-awesome" },
+                    { time: "01:00 PM", text: "Midday Escape. Head back to the Davy Crockett cabin deck. Fire up the charcoal BBQ for a budget-friendly lunch.", icon: "fa-fire-burner" },
+                    { time: "03:00 PM", text: "Heated Pool Break. Head down to the Blue Springs timber pool village to enjoy the water slide and waterfalls.", icon: "fa-water-ladder" }
                 ]
             },
             3: {
-                title: "Day 3: Parisian Exploration Day Trip",
+                title: "Day 3: Thursday - Parisian Exploration Day Trip",
                 desc: "An incredible mix of double-decker trains, classic architecture, and a relaxing river cruise.",
                 timeline: [
-                    { time: "09:00 AM", text: "RER A Train. Board the smooth double-decker express train straight into the heart of Paris (40 mins).", img: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=300&q=80" },
-                    { time: "10:00 AM", text: "Arc de Triomphe. Walk out right at the monument base and take family photos down the historic Champs-Élysées.", img: "https://images.unsplash.com/photo-1509060464153-44667396260f?auto=format&fit=crop&w=300&q=80" },
-                    { time: "11:30 AM", text: "Trocadéro & Eiffel Tower. Capture the absolute best panoramic views of the Eiffel Tower before heading underneath.", img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=300&q=80" },
-                    { time: "02:30 PM", text: "Bateaux Parisiens Cruise. Board the covered 1-hour cruise at the foot of the tower to rest your legs while viewing landmarks.", img: "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=300&q=80" }
+                    { time: "09:00 AM", text: "RER A Train. Board the smooth double-decker express train straight into the heart of Paris (40 mins).", icon: "fa-train" },
+                    { time: "10:15 AM", text: "Arc de Triomphe. Walk out right at the monument base and take family photos down the historic Champs-Élysées.", icon: "fa-monument" },
+                    { time: "11:45 AM", text: "Trocadéro & Eiffel Tower. Capture the absolute best panoramic views of the Eiffel Tower before heading underneath.", icon: "fa-gopuram" },
+                    { time: "02:30 PM", text: "Bateaux Parisiens Cruise. Board the covered 1-hour cruise at the foot of the tower to rest your legs while viewing landmarks.", icon: "fa-ship" }
                 ]
             },
             4: {
-                title: "Day 4: Walt Disney Studios (Adventure World)",
+                title: "Day 4: Friday - Disney Adventure World (Studios)",
                 desc: "Focusing on Pixar favorites, world-class staging, and cheap dining options outside the village.",
                 timeline: [
-                    { time: "08:30 AM", text: "Extra Magic Time. Enter the second gate early. Dash straight onto Ratatouille and Spider-Man W.E.B. Adventure.", img: "https://images.unsplash.com/photo-1460881680858-30d872d5b530?auto=format&fit=crop&w=300&q=80" },
-                    { time: "02:00 PM", text: "Mickey and the Magician. Cool down inside the premium, air-conditioned theater for a jaw-dropping stage show.", img: "https://images.unsplash.com/photo-1460881680858-30d872d5b530?auto=format&fit=crop&w=300&q=80" },
-                    { time: "06:00 PM", text: "Dinner Alternate. Drive 5 minutes to Val d'Europe mall for an affordable family dinner away from park pricing.", img: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=300&q=80" }
+                    { time: "08:30 AM", text: "Extra Magic Time. Enter the second gate early. Dash straight onto Ratatouille and Spider-Man W.E.B. Adventure.", icon: "fa-mask" },
+                    { time: "02:00 PM", text: "Mickey and the Magician. Cool down inside the premium, air-conditioned theater for a jaw-dropping stage show.", icon: "fa-wand-magic-sparkles" },
+                    { time: "06:00 PM", text: "Dinner Alternate. Drive 5 minutes to Val d'Europe mall for an affordable family dinner away from park pricing.", icon: "fa-utensils" }
                 ]
             },
             5: {
-                title: "Day 5: Forest Village Relaxation & Meet & Greets",
-                desc: "A relaxed, slower morning pace designed to prevent theme park fatigue.",
+                title: "Day 5: Saturday - Ultimate Favorites Encore & Fireworks Finale",
+                desc: "Letting the kids control the itinerary to experience their favorite rides one last time.",
                 timeline: [
-                    { time: "09:30 AM", text: "Sleep In. Enjoy a quiet, lazy forest morning. Cook up a full traditional breakfast in the cabin kitchen.", img: "https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=300&q=80" },
-                    { time: "11:00 AM", text: "Character Autograph Hunt. Enter the parks specifically for character meets, souvenir browsing, and photos.", img: "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=300&q=80" }
+                    { time: "08:30 AM", text: "Final Extra Magic Hour. Use this premium morning window to hit the kids' top favorite rides with zero queues.", icon: "fa-star" },
+                    { time: "02:30 PM", text: "Character Autograph Hunt. Enter the main street squares specifically for character meets and souvenir browsing.", icon: "fa-pen-clip" },
+                    { time: "08:30 PM", text: "Farewell Night Spectacular. Head back in for one last night of magical drones and castle fireworks display.", icon: "fa-cloud-moon-flash" }
                 ]
             },
             6: {
-                title: "Day 6: The Ultimate Favorites Encore",
-                desc: "Letting the kids control the itinerary to experience their favorite rides one last time.",
-                timeline: [
-                    { time: "08:30 AM", text: "Final Extra Magic Hour. Use this premium morning window to hit the kids' top favorite rides with zero queues.", img: "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=300&q=80" },
-                    { time: "08:00 PM", text: "Farewell Night Spectacular. Head back in for one last night of magical drones and castle fireworks display.", img: "https://images.unsplash.com/photo-1467810563316-b5476525c0f9?auto=format&fit=crop&w=300&q=80" }
-                ]
-            },
-            7: {
-                title: "Day 7: Disney Village Shopping & Journey Home",
+                title: "Day 6: Sunday - Disney Village Shopping & Journey Home",
                 desc: "Packing up the car and clearing Calais customs smoothly via the Eurotunnel.",
                 timeline: [
-                    { time: "10:00 AM", text: "Cabin Check-out. Pack the car boot, hand in cabin keys, and spend a casual afternoon at Disney Village.", img: "https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=300&q=80" },
-                    { time: "06:30 PM (FR)", text: "Calais Terminal Arrival. Arrive 2 hours early to clear French customs comfortably and check-in to your Eurotunnel driving return rail slot.", img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=300&q=80" }
+                    { time: "10:00 AM", text: "Cabin Check-out. Pack the car boot, hand in cabin keys, and spend a casual morning at Disney Village.", icon: "fa-bag-shopping" },
+                    { time: "06:30 PM (FR)", text: "Calais Terminal Arrival. Arrive 2 hours early to clear French customs comfortably and check-in to your Eurotunnel driving return rail slot.", icon: "fa-square-check" }
                 ]
             }
         };
@@ -308,8 +304,10 @@
                              <div class="space-y-4 pt-2">`;
             
             data.timeline.forEach(item => {
-                htmlBlock += `<div class="flex items-start gap-4 p-2 rounded-xl bg-slate-950/40 border border-slate-800/30">
-                                <img src="${item.img}" onerror="this.style.display='none'" class="w-16 h-16 object-cover rounded-lg shrink-0 border border-slate-800 bg-slate-900 shadow-md" alt="Timeline scene">
+                htmlBlock += `<div class="flex items-start gap-4 p-3 rounded-xl bg-slate-950/40 border border-slate-800/30">
+                                <div class="w-12 h-12 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0 shadow-md">
+                                    <i class="fa-solid ${item.icon} text-lg text-slate-400"></i>
+                                </div>
                                 <div class="space-y-0.5">
                                     <div class="inline-block bg-slate-950 px-2 py-0.5 rounded border border-slate-800 font-mono text-[9px] text-blue-400 font-bold">${item.time}</div>
                                     <p class="text-xs text-slate-300 leading-relaxed pt-0.5">${item.text}</p>
