@@ -1,92 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-[#f7f3eb]">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Davy Crockett Ranch | 2026 Planning</title>
+    <title>Disney Davy Crockett Ranch | Strategy Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
-        body { font-family: 'Poppins', sans-serif; }
-        .ranch-wood { background-color: #3d4a36; }
-        .ranch-amber { color: #b7791f; }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
+        body { font-family: 'Poppins', sans-serif; background-color: #f7f3eb; }
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1448375240586-882707484347?auto=format&fit=crop&q=80&w=1000') center/cover; }
     </style>
 </head>
-<body class="text-slate-800">
+<body>
 
-    <header class="ranch-wood text-white py-16 px-6 text-center">
-        <h1 class="font-serif text-5xl mb-2">Disney Davy Crockett Ranch</h1>
-        <p class="text-amber-500 font-medium tracking-[0.2em] uppercase text-xs">Strategy & Logistics Portal | August 2026</p>
+    <!-- Hero Section -->
+    <header class="hero-gradient h-[50vh] flex flex-col items-center justify-center text-white px-6 text-center">
+        <h1 class="font-serif text-4xl mb-4">DISNEY<br>DAVY CROCKETT<br>RANCH</h1>
+        <p class="text-sm font-light italic max-w-xs">Unwind in the land of pioneers in the heart of nature at this 3-star residential leisure park!</p>
     </header>
 
-    <main class="max-w-6xl mx-auto py-10 px-6 grid lg:grid-cols-3 gap-8">
+    <!-- Navigation Overlay -->
+    <div class="max-w-md mx-auto -mt-10 px-4">
+        <div class="bg-[#a88a6d] rounded-xl p-4 flex justify-between text-white text-[10px] shadow-lg">
+            <div class="text-center"><i class="fa-solid fa-hotel block mb-1"></i>The Village</div>
+            <div class="text-center"><i class="fa-solid fa-bed block mb-1"></i>The cabins</div>
+            <div class="text-center"><i class="fa-solid fa-suitcase block mb-1"></i>Book your stay</div>
+        </div>
+    </div>
+
+    <main class="max-w-md mx-auto py-10 px-6 space-y-8">
         
-        <div class="lg:col-span-1 space-y-8">
-            <h2 class="text-2xl font-serif ranch-amber mb-4 border-b border-amber-800 pb-2">Property Features</h2>
-            <div class="space-y-4">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
-                    <div class="h-40 bg-gray-300 flex items-center justify-center text-gray-500"></div>
-                    <div class="p-4"><h4 class="font-bold">New Standard Cabin</h4><p class="text-xs text-gray-600 mt-1">Junior Woodchucks themed woodland retreat.</p></div>
-                </div>
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
-                    <div class="h-40 bg-gray-300 flex items-center justify-center text-gray-500"></div>
-                    <div class="p-4"><h4 class="font-bold">Cabin – Near Facilities</h4><p class="text-xs text-gray-600 mt-1">Prime proximity to pool and tavern.</p></div>
-                </div>
+        <!-- Financial Matrix -->
+        <section>
+            <h2 class="font-bold text-gray-800 mb-4 uppercase tracking-wider text-[10px]">Financial Matrix</h2>
+            <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200 space-y-3">
+                <div class="flex justify-between text-sm"><span>Disney Base Package</span><span class="font-bold">£3,672.48</span></div>
+                <div class="flex justify-between text-sm"><span>Eurotunnel</span><span class="font-bold">£180.00</span></div>
+                <div class="flex justify-between text-sm"><span>Fuel & Tolls</span><span class="font-bold">£180.00</span></div>
+                <div class="pt-3 border-t text-center text-2xl font-serif text-[#a88a6d]">£4,032.48</div>
             </div>
+        </section>
 
-            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
-                <h3 class="font-bold mb-4 flex items-center gap-2 text-sm uppercase tracking-wider"><i class="fa-solid fa-calculator ranch-amber"></i> Financial Matrix</h3>
-                <div class="space-y-2">
-                    <div onclick="toggleItem(this, 3672.48)" class="p-3 bg-gray-50 rounded border cursor-pointer hover:bg-gray-100 flex justify-between text-xs"><span>Disney Base Pkg</span><span class="font-bold">£3,672.48</span></div>
-                    <div onclick="toggleItem(this, 180)" class="p-3 bg-gray-50 rounded border cursor-pointer hover:bg-gray-100 flex justify-between text-xs"><span>Eurotunnel</span><span class="font-bold">£180.00</span></div>
-                    <div onclick="toggleItem(this, 180)" class="p-3 bg-gray-50 rounded border cursor-pointer hover:bg-gray-100 flex justify-between text-xs"><span>Fuel & Tolls</span><span class="font-bold">£180.00</span></div>
+        <!-- Full 6-Day Itinerary -->
+        <section>
+            <h2 class="font-bold text-gray-800 mb-4 uppercase tracking-wider text-[10px]">Full 6-Day Itinerary</h2>
+            <div class="space-y-3">
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                    <h4 class="font-bold text-sm mb-1">Day 1: Tuesday - Journey & Setup</h4>
+                    <p class="text-[11px] text-gray-600">01:00 AM: Depart Bury | 05:30 AM: Arrive Folkestone | 06:30 AM: Early Bird Eurotunnel | 11:00 AM: Arrive at Ranch.</p>
                 </div>
-                <div class="mt-6 pt-4 border-t text-center">
-                    <div id="totalDisplay" class="text-3xl font-serif ranch-amber">£4,512.48</div>
-                    <div class="text-[10px] text-gray-400 mt-1 uppercase">Paid: <span id="paidDisplay" class="font-bold text-gray-700">£0</span></div>
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                    <h4 class="font-bold text-sm mb-1">Day 2: Wednesday - Magic Kingdom</h4>
+                    <p class="text-[11px] text-gray-600">08:30 AM: Extra Magic Time (Priority: Peter Pan) | 12:30 PM: BBQ lunch | 03:00 PM: Blue Springs Pool | 08:00 PM: Illuminations.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                    <h4 class="font-bold text-sm mb-1">Day 3: Thursday - Paris Exploration</h4>
+                    <p class="text-[11px] text-gray-600">09:00 AM: RER A Train (45m) | 10:30 AM: Arc de Triomphe | 02:00 PM: Seine River Cruise | 05:00 PM: Return to Ranch.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                    <h4 class="font-bold text-sm mb-1">Day 4: Friday - Adventure Studios</h4>
+                    <p class="text-[11px] text-gray-600">08:30 AM: Extra Magic Time (Priority: Crush's Coaster) | 01:00 PM: Mickey & The Magician | 06:00 PM: Val d'Europe.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                    <h4 class="font-bold text-sm mb-1">Day 5: Saturday - Finale Encore</h4>
+                    <p class="text-[11px] text-gray-600">08:30 AM: Favorite Rides (Revisit) | 02:00 PM: Character Meets | 09:00 PM: Farewell Night Spectacular.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                    <h4 class="font-bold text-sm mb-1">Day 6: Sunday - Departure</h4>
+                    <p class="text-[11px] text-gray-600">10:00 AM: Cabin Checkout | 01:00 PM: Disney Village | 06:30 PM: Eurotunnel return crossing.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="lg:col-span-2">
-            <h2 class="text-2xl font-serif ranch-amber mb-6 border-b border-amber-800 pb-2">Full Itinerary</h2>
-            <div class="flex gap-2 overflow-x-auto pb-4 no-scrollbar">
-                {[1,2,3,4,5,6].map(d => `<button onclick="switchDay(${d})" id="tab-${d}" class="tab-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 text-sm font-semibold hover:bg-[#3d4a36] hover:text-white transition">Day ${d}</button>`).join('')}
-            </div>
-            <div id="itineraryContainer" class="bg-white p-8 rounded-xl shadow-md border border-gray-200 min-h-[400px]"></div>
-        </div>
     </main>
 
-    <script>
-        let activePaidSummary = 0;
-        function toggleItem(el, cost) {
-            const checked = el.classList.toggle('border-amber-600');
-            el.classList.toggle('bg-amber-50');
-            activePaidSummary += checked ? cost : -cost;
-            document.getElementById("paidDisplay").innerText = "£" + activePaidSummary.toLocaleString(undefined, {minimumFractionDigits: 2});
-        }
-
-        const daysData = {
-            1: { title: "Tuesday: Outbound & Setup", timeline: ["12:30 AM: Depart Bury", "06:00 AM: Folkestone Eurotunnel", "11:05 AM: Arrive France", "02:00 PM: Check-In"] },
-            2: { title: "Wednesday: Magic Kingdom", timeline: ["08:30 AM: Extra Magic Time", "01:00 PM: Cabin BBQ", "03:00 PM: Blue Springs Pool"] },
-            3: { title: "Thursday: Paris Exploration", timeline: ["09:00 AM: RER A Train to Paris", "10:15 AM: Arc de Triomphe", "02:30 PM: River Cruise"] },
-            4: { title: "Friday: Disney Studios", timeline: ["08:30 AM: Avengers & Ratatouille", "02:00 PM: Stage Show", "06:00 PM: Val d'Europe Dinner"] },
-            5: { title: "Saturday: Finale Encore", timeline: ["08:30 AM: Favorite Rides", "02:30 PM: Character Autographs", "08:30 PM: Fireworks"] },
-            6: { title: "Sunday: Departure", timeline: ["10:00 AM: Checkout", "06:30 PM: Eurotunnel Return"] }
-        };
-
-        function switchDay(dayId) {
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.replace('bg-[#3d4a36]', 'bg-gray-200') || b.classList.replace('text-white', 'text-gray-700'));
-            document.getElementById('tab-' + dayId).classList.replace('bg-gray-200', 'bg-[#3d4a36]');
-            document.getElementById('tab-' + dayId).classList.replace('text-gray-700', 'text-white');
-            
-            const data = daysData[dayId];
-            document.getElementById('itineraryContainer').innerHTML = `<h3 class="font-serif text-xl ranch-amber mb-6">${data.title}</h3>` + 
-                data.timeline.map(t => `<div class="p-4 mb-3 bg-gray-50 border-l-4 border-amber-600 rounded text-sm">${t}</div>`).join('');
-        }
-        switchDay(1);
-    </script>
 </body>
 </html>
