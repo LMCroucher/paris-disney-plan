@@ -1,79 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-gb">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disney Davy Crockett Ranch | Strategy Portal</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Disneyland Paris Trip Planner</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
-        body { font-family: 'Poppins', sans-serif; background-color: #f7f3eb; }
-        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1448375240586-882707484347?auto=format&fit=crop&q=80&w=1000') center/cover; }
+        :root {
+            --forest-green: #2d4a3e;
+            --cabin-wood: #8b5a2b;
+            --cream: #fdfbf7;
+            --accent-gold: #c5a059;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--cream); color: #333; line-height: 1.6; margin: 0; padding: 0; }
+        header { background-color: var(--forest-green); color: white; text-align: center; padding: 2rem; }
+        .container { max-width: 800px; margin: auto; padding: 20px; }
+        h2 { color: var(--forest-green); border-bottom: 2px solid var(--accent-gold); padding-bottom: 5px; margin-top: 30px; }
+        
+        .budget-table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; }
+        .budget-table th, .budget-table td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+        .budget-table th { background-color: var(--forest-green); color: white; }
+        .total-row { font-weight: bold; background-color: #eee; }
+
+        .checklist { list-style-type: none; padding: 0; }
+        .checklist li { margin-bottom: 10px; display: flex; align-items: center; }
+        .checklist li input { margin-right: 15px; transform: scale(1.5); }
+
+        .video-container { margin: 20px 0; text-align: center; }
+        .video-container iframe { width: 100%; max-width: 560px; height: 315px; border: 4px solid var(--cabin-wood); border-radius: 8px; }
+
+        .timeline { border-left: 3px solid var(--cabin-wood); margin-left: 20px; padding-left: 20px; }
+        .day { margin-bottom: 30px; }
+        .time { font-weight: bold; color: var(--cabin-wood); }
     </style>
 </head>
 <body>
 
-    <!-- Hero Section -->
-    <header class="hero-gradient h-[50vh] flex flex-col items-center justify-center text-white px-6 text-center">
-        <h1 class="font-serif text-4xl mb-4">DISNEY<br>DAVY CROCKETT<br>RANCH</h1>
-        <p class="text-sm font-light italic max-w-xs">Unwind in the land of pioneers in the heart of nature at this 3-star residential leisure park!</p>
-    </header>
+<header>
+    <h1>Our Magical Expedition</h1>
+    <p>Davy Crockett Ranch & Paris Adventures</p>
+</header>
 
-    <!-- Navigation Overlay -->
-    <div class="max-w-md mx-auto -mt-10 px-4">
-        <div class="bg-[#a88a6d] rounded-xl p-4 flex justify-between text-white text-[10px] shadow-lg">
-            <div class="text-center"><i class="fa-solid fa-hotel block mb-1"></i>The Village</div>
-            <div class="text-center"><i class="fa-solid fa-bed block mb-1"></i>The cabins</div>
-            <div class="text-center"><i class="fa-solid fa-suitcase block mb-1"></i>Book your stay</div>
+<div class="container">
+
+    <section>
+        <h2>🏕 Resort Inspiration</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/LfciriS7ooI" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section>
+        <h2>💰 Estimated Budget Summary</h2>
+        <table class="budget-table">
+            <tr><th>Item</th><th>Estimated Cost</th></tr>
+            <tr><td>Accommodation (5 nights)</td><td>£3,600.00</td></tr>
+            <tr><td>Le Shuttle (Return)</td><td>£250.00</td></tr>
+            <tr><td>Fuel (Return from Bury)</td><td>£180.00</td></tr>
+            <tr><td>French Motorway Tolls</td><td>£120.00</td></tr>
+            <tr class="total-row"><td>Total Estimate</td><td>£4,150.00</td></tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>✅ Pre-Departure Essentials</h2>
+        <ul class="checklist">
+            <li><input type="checkbox"> <strong>Warning Triangle</strong> (Legal requirement in France)</li>
+            <li><input type="checkbox"> <strong>High-Visibility Vests</strong> (One for each passenger)</li>
+            <li><input type="checkbox"> <strong>Headlamp Beam Deflectors</strong></li>
+            <li><input type="checkbox"> <strong>Passport & EES Documents</strong></li>
+            <li><input type="checkbox"> <strong>MagicPass Tickets</strong> (Print/Save to phone)</li>
+        </ul>
+    </section>
+
+    <div class="day">
+        <h2>🚗 Monday Night / Tuesday: Travel & Chilled First Day</h2>
+        <div class="timeline">
+            <p><span class="time">00:00</span> Depart Bury. <span class="time">05:30</span> Arrive Folkestone. <span class="time">07:30</span> Board Le Shuttle.</p>
+            <p><span class="time">12:15</span> Arrive Davy Crockett Ranch. Collect MagicPass.</p>
+            <p><span class="time">Afternoon</span> Disneyland Park stroll & steam train.</p>
+            <p><span class="time">16:00</span> Check into new style cabin; nap & early bedtime.</p>
         </div>
     </div>
 
-    <main class="max-w-md mx-auto py-10 px-6 space-y-8">
-        
-        <!-- Financial Matrix -->
-        <section>
-            <h2 class="font-bold text-gray-800 mb-4 uppercase tracking-wider text-[10px]">Financial Matrix</h2>
-            <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200 space-y-3">
-                <div class="flex justify-between text-sm"><span>Disney Base Package</span><span class="font-bold">£3,672.48</span></div>
-                <div class="flex justify-between text-sm"><span>Eurotunnel</span><span class="font-bold">£180.00</span></div>
-                <div class="flex justify-between text-sm"><span>Fuel & Tolls</span><span class="font-bold">£180.00</span></div>
-                <div class="pt-3 border-t text-center text-2xl font-serif text-[#a88a6d]">£4,032.48</div>
-            </div>
-        </section>
+    <div class="day">
+        <h2>🏰 Wednesday: Disneyland Park & Pool</h2>
+        <div class="timeline">
+            <p><span class="time">08:30</span> Extra Magic Time (Big Thunder & Peter Pan).</p>
+            <p><span class="time">Daytime</span> Explore Fantasyland/Adventureland; 16:00 Parade.</p>
+            <p><span class="time">17:30</span> Pool Session & Cabin BBQ.</p>
+        </div>
+    </div>
 
-        <!-- Full 6-Day Itinerary -->
-        <section>
-            <h2 class="font-bold text-gray-800 mb-4 uppercase tracking-wider text-[10px]">Full 6-Day Itinerary</h2>
-            <div class="space-y-3">
-                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-                    <h4 class="font-bold text-sm mb-1">Day 1: Tuesday - Journey & Setup</h4>
-                    <p class="text-[11px] text-gray-600">01:00 AM: Depart Bury | 05:30 AM: Arrive Folkestone | 06:30 AM: Early Bird Eurotunnel | 11:00 AM: Arrive at Ranch.</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-                    <h4 class="font-bold text-sm mb-1">Day 2: Wednesday - Magic Kingdom</h4>
-                    <p class="text-[11px] text-gray-600">08:30 AM: Extra Magic Time (Priority: Peter Pan) | 12:30 PM: BBQ lunch | 03:00 PM: Blue Springs Pool | 08:00 PM: Illuminations.</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-                    <h4 class="font-bold text-sm mb-1">Day 3: Thursday - Paris Exploration</h4>
-                    <p class="text-[11px] text-gray-600">09:00 AM: RER A Train (45m) | 10:30 AM: Arc de Triomphe | 02:00 PM: Seine River Cruise | 05:00 PM: Return to Ranch.</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-                    <h4 class="font-bold text-sm mb-1">Day 4: Friday - Adventure Studios</h4>
-                    <p class="text-[11px] text-gray-600">08:30 AM: Extra Magic Time (Priority: Crush's Coaster) | 01:00 PM: Mickey & The Magician | 06:00 PM: Val d'Europe.</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-                    <h4 class="font-bold text-sm mb-1">Day 5: Saturday - Finale Encore</h4>
-                    <p class="text-[11px] text-gray-600">08:30 AM: Favorite Rides (Revisit) | 02:00 PM: Character Meets | 09:00 PM: Farewell Night Spectacular.</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-                    <h4 class="font-bold text-sm mb-1">Day 6: Sunday - Departure</h4>
-                    <p class="text-[11px] text-gray-600">10:00 AM: Cabin Checkout | 01:00 PM: Disney Village | 06:30 PM: Eurotunnel return crossing.</p>
-                </div>
-            </div>
-        </section>
+    <div class="day">
+        <h2>🗼 Thursday: Paris Sightseeing</h2>
+        <div class="timeline">
+            <p><span class="time">09:30</span> RER A train to Paris.</p>
+            <p><span class="time">Daytime</span> Arc de Triomphe, Eiffel Tower & River Seine Cruise.</p>
+            <p><span class="time">Evening</span> Dinner at Annette's Diner.</p>
+        </div>
+    </div>
 
-    </main>
+    <div class="day">
+        <h2>🎬 Friday: Walt Disney Studios Park</h2>
+        <div class="timeline">
+            <p><span class="time">08:30</span> Crush's Coaster & Spider-Man.</p>
+            <p><span class="time">Afternoon</span> Mickey and the Magician.</p>
+            <p><span class="time">Evening</span> Dinner at Crockett’s Tavern.</p>
+        </div>
+    </div>
+
+    <div class="day">
+        <h2>🎢 Saturday: Favourites & Peak Crowd Escape</h2>
+        <div class="timeline">
+            <p><span class="time">Morning</span> Character photos & favourite rides.</p>
+            <p><span class="time">15:00</span> Pool session to escape crowds.</p>
+            <p><span class="time">Evening</span> World of Disney shopping.</p>
+        </div>
+    </div>
+
+    <div class="day">
+        <h2>🛍 Sunday: Swim, Shop & Drive Home</h2>
+        <div class="timeline">
+            <p><span class="time">09:00</span> Final swim & check-out.</p>
+            <p><span class="time">13:00</span> Val d’Europe lunch/shopping.</p>
+            <p><span class="time">18:30</span> Arrive Calais; 20:30 Eurotunnel; 02:35 Home.</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p style="text-align: center; color: #777; font-size: 0.8rem; padding: 20px;">Safe travels from Bury to Disney!</p>
+</footer>
 
 </body>
 </html>
