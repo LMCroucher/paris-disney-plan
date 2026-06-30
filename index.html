@@ -9,14 +9,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght=600;700&family=Poppins:wght=300;400;500;600;700&display=swap');
         .magic-font { font-family: 'Cinzel', serif; }
-        body { font-family: 'Poppins', sans-serif; background-color: #0b0f19; }
+        body { font-family: 'Poppins', sans-serif; background-color: #0b0f19 !important; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="text-slate-100 min-h-screen antialiased selection:bg-blue-600 selection:text-white">
+<body class="text-slate-100 min-h-screen antialiased selection:bg-blue-600 selection:text-white bg-slate-950">
 
-    <!-- Premium Hero Section -->
     <header class="relative bg-slate-900 border-b border-slate-800 bg-cover bg-center py-12 px-4 text-center" style="background-image: linear-gradient(to bottom, rgba(11, 15, 25, 0.85), rgba(11, 15, 25, 0.98)), url('https://images.unsplash.com/photo-1513635269975-59663e0ca1ad?auto=format&fit=crop&w=1200&q=80');">
         <div class="max-w-4xl mx-auto">
             <span class="inline-block bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-3">August 24 – August 30, 2026</span>
@@ -25,7 +24,6 @@
             </h1>
             <p class="text-slate-400 text-sm mt-2 max-w-md mx-auto font-light">The Ultimate 6-Night Self-Catering Road Trip Strategy</p>
             
-            <!-- Real-Time Javascript Countdown -->
             <div class="grid grid-cols-4 gap-2 max-w-sm mx-auto mt-6 bg-slate-950/80 backdrop-blur border border-slate-800 p-4 rounded-xl shadow-xl">
                 <div class="text-center"><span id="days" class="block text-2xl font-bold text-amber-400 magic-font">--</span><span class="text-[9px] text-slate-400 uppercase tracking-widest font-semibold">Days</span></div>
                 <div class="text-center"><span id="hours" class="block text-2xl font-bold text-slate-200 magic-font">--</span><span class="text-[9px] text-slate-400 uppercase tracking-widest font-semibold">Hours</span></div>
@@ -35,11 +33,10 @@
         </div>
     </header>
 
-    <!-- Brochure Style Horizontal Image Swipe Gallery -->
     <section class="max-w-6xl mx-auto px-4 pt-8">
         <div class="flex items-center justify-between mb-3 px-1">
             <h3 class="text-xs font-bold tracking-wider uppercase text-amber-400 flex items-center gap-2">
-                <i class="fa-solid fa-images"></i> Trip Brochure Preview (Actual Accommodation & Views)
+                <i class="fa-solid fa-images"></i> Trip Brochure Preview (Actual Views)
             </h3>
             <span class="text-[11px] text-slate-400 flex items-center gap-1 italic">
                 Swipe horizontally <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -47,7 +44,6 @@
         </div>
         
         <div class="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory no-scrollbar">
-            <!-- Card 1: Actual Cabin Exterior -->
             <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
                 <div class="h-40 bg-slate-950 relative">
                     <img class="w-full h-full object-cover" src="image_agent_tag_2245738964844620718" alt="Exterior view of a modern cabin at Disney's Fort Wilderness Resort with a wooden deck">
@@ -59,7 +55,6 @@
                 </div>
             </div>
             
-            <!-- Card 2: Actual Cabin Interior Layout -->
             <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
                 <div class="h-40 bg-slate-950 relative">
                     <img class="w-full h-full object-cover" src="image_agent_tag_2245738964844621693" alt="Interior view of a Fort Wilderness cabin showing living area, kitchen, and dining space">
@@ -71,7 +66,6 @@
                 </div>
             </div>
 
-            <!-- Card 3: Magic Kingdom Theme Parks -->
             <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
                 <div class="h-40 bg-slate-950 relative">
                     <img class="w-full h-full object-cover" src="image_agent_tag_2245738964844624100" alt="Magic Kingdom park featuring Prince Charming Regal Carrousel lit up at dusk with Cinderella Castle in background">
@@ -83,7 +77,6 @@
                 </div>
             </div>
 
-            <!-- Card 4: Paris Day Excursion Landmark -->
             <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
                 <div class="h-40 bg-slate-950 relative">
                     <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" alt="Eiffel Tower Paris France View">
@@ -97,10 +90,8 @@
         </div>
     </section>
 
-    <!-- Interactive Workspace Grid Dashboard -->
     <main class="max-w-6xl mx-auto px-4 py-4 grid grid-cols-1 lg:grid-cols-3 gap-6">
         
-        <!-- Left Sidebar: Cost Matrix Management -->
         <div class="lg:col-span-1 space-y-6">
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-xl">
                 <h3 class="text-base font-bold mb-1 flex items-center gap-2"><i class="fa-solid fa-calculator text-amber-400"></i> Cost Tracker</h3>
@@ -129,7 +120,6 @@
                     </div>
                 </div>
 
-                <!-- Paris Excursion Picker Add-on -->
                 <div class="mt-4 pt-4 border-t border-slate-800">
                     <h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">Paris Day Upgrade Option</h4>
                     <select id="parisAddon" onchange="calculateBudget()" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-2.5 text-xs text-slate-200 focus:ring-1 focus:ring-blue-500 focus:outline-none">
@@ -140,7 +130,6 @@
                     </select>
                 </div>
 
-                <!-- Bottom Metrics Output Block -->
                 <div class="mt-4 p-4 bg-slate-950 rounded-xl border border-slate-800 text-center">
                     <div class="text-[10px] text-slate-400 uppercase tracking-widest font-medium">Calculated Budget Total</div>
                     <div id="totalDisplay" class="text-2xl font-black text-emerald-400 magic-font mt-0.5">£3,575</div>
@@ -149,179 +138,8 @@
             </div>
         </div>
 
-        <!-- Right Content: Day-by-day Segment Panels -->
         <div class="lg:col-span-2 space-y-4">
-            <!-- Day Selector Tab Bar Navigation -->
             <div class="bg-slate-900 p-1.5 rounded-xl border border-slate-800 overflow-x-auto flex gap-1 no-scrollbar">
                 <button onclick="switchDay(1)" id="tab-1" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap bg-blue-600 text-white">Day 1: Mon</button>
                 <button onclick="switchDay(2)" id="tab-2" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 2: Tue</button>
-                <button onclick="switchDay(3)" id="tab-3" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 3: Wed</button>
-                <button onclick="switchDay(4)" id="tab-4" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 4: Thu</button>
-                <button onclick="switchDay(5)" id="tab-5" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 5: Fri</button>
-                <button onclick="switchDay(6)" id="tab-6" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 6: Sat</button>
-                <button onclick="switchDay(7)" id="tab-7" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-400 hover:text-slate-200">Day 7: Sun</button>
-            </div>
-
-            <!-- Main Timed Itinerary Content Container -->
-            <div id="itineraryContainer" class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
-                <!-- Data sets injected by JavaScript Engine -->
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer Space -->
-    <footer class="max-w-6xl mx-auto px-4 py-6 text-center text-xs text-slate-600 border-t border-slate-900 mt-6">
-        <p>Lee & Lisette's Shared Travel Portal • Real-Time Dynamic Rendering</p>
-    </footer>
-
-    <script>
-        // Exact 2026 Live Countdown Configuration Logic
-        const launchDate = new Date("August 24, 2026 00:30:00").getTime();
-        
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const timeWindow = launchDate - now;
-            
-            if (timeWindow > 0) {
-                const d = Math.floor(timeWindow / (1000 * 60 * 60 * 24));
-                const h = Math.floor((timeWindow % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const m = Math.floor((timeWindow % (1000 * 60 * 60)) / (1000 * 60));
-                const s = Math.floor((timeWindow % (1000 * 60)) / (1000));
-                
-                document.getElementById("days").innerText = String(d).padStart(2, '0');
-                document.getElementById("hours").innerText = String(h).padStart(2, '0');
-                document.getElementById("mins").innerText = String(m).padStart(2, '0');
-                document.getElementById("secs").innerText = String(s).padStart(2, '0');
-            } else {
-                document.getElementById("days").innerText = "00";
-                document.getElementById("hours").innerText = "00";
-                document.getElementById("mins").innerText = "00";
-                document.getElementById("secs").innerText = "00";
-            }
-        }
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-
-        // Interactive Tracking Core Variables
-        let activePaidSummary = 0;
-        function toggleItem(el, cost) {
-            const checked = el.classList.toggle('border-emerald-500');
-            el.classList.toggle('bg-emerald-950/20');
-            if (checked) {
-                activePaidSummary += cost;
-            } else {
-                activePaidSummary -= cost;
-            }
-            document.getElementById("paidDisplay").innerText = "£" + activePaidSummary.toLocaleString();
-        }
-
-        function calculateBudget() {
-            let baseRate = 3575;
-            let currentSelection = parseInt(document.getElementById("parisAddon").value);
-            document.getElementById("totalDisplay").innerText = "£" + (baseRate + currentSelection).toLocaleString();
-        }
-
-        // Full Itinerary Data Objects with visual image hooks matching the timeline events
-        const daysData = {
-            1: {
-                title: "Day 1: The Midnight Run & Outbound Border Crossings",
-                desc: "Transit logistics completely mapped out to handle EU biometric check-ins seamlessly.",
-                timeline: [
-                    { time: "12:30 AM (UK)", text: "Departure from Bury. Lisette takes the initial UK driving shift while Lee sleeps with an eye-mask.", img: "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=300&q=80" },
-                    { time: "06:00 AM (UK)", text: "Arrive at Folkestone Eurotunnel. Perfect 2-hour buffer window before boarding for mandatory passport control checks.", img: "https://images.unsplash.com/photo-1542397284385-60101764249a?auto=format&fit=crop&w=300&q=80" },
-                    { time: "11:05 AM (FR)", text: "Welcome to France! Dynamic shift into Central European Time (+1 hour). Drive off into Calais fully refreshed.", img: "https://images.unsplash.com/photo-1503917988258-f87a78e3c995?auto=format&fit=crop&w=300&q=80" },
-                    { time: "01:30 PM (FR)", text: "Pre-Check-In. Drive directly to the Fort Wilderness greeting booths. Collect your MagicPass theme park tickets right through the window.", img: "image_agent_tag_2245738964844620718" }
-                ]
-            },
-            2: {
-                title: "Day 2: Magic Kingdom Optimization & Deck Chill Out",
-                desc: "Leveraging early entry hours followed by a budget-conscious cabin BBQ break.",
-                timeline: [
-                    { time: "08:30 AM", text: "Extra Magic Time. Enter Disneyland Park 60 minutes before the public. Walk straight onto Peter Pan and Big Thunder Mountain.", img: "image_agent_tag_2245738964844624100" },
-                    { time: "01:00 PM", text: "Midday Escape. Head back to the cabin deck. Fire up the charcoal BBQ for a budget-friendly lunch.", img: "image_agent_tag_2245738964844620718" },
-                    { time: "02:35 PM", text: "Blue Springs Pool. Recharge inside your private woodland home layout, relaxing within the high vaulted ceilings.", img: "image_agent_tag_2245738964844621693" }
-                ]
-            },
-            3: {
-                title: "Day 3: Parisian Exploration Day Trip",
-                desc: "An incredible mix of double-decker trains, classic architecture, and a relaxing river cruise.",
-                timeline: [
-                    { time: "09:00 AM", text: "RER A Train. Board the smooth double-decker express train straight into the heart of Paris (40 mins).", img: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=300&q=80" },
-                    { time: "10:00 AM", text: "Arc de Triomphe. Walk out right at the monument base and take family photos down the historic Champs-Élysées.", img: "https://images.unsplash.com/photo-1509060464153-44667396260f?auto=format&fit=crop&w=300&q=80" },
-                    { time: "11:30 AM", text: "Trocadéro & Eiffel Tower. Capture the absolute best panoramic views of the Eiffel Tower before heading underneath.", img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=300&q=80" },
-                    { time: "02:30 PM", text: "Bateaux Parisiens Cruise. Board the covered 1-hour cruise at the foot of the tower to rest your legs while viewing landmarks.", img: "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=300&q=80" }
-                ]
-            },
-            4: {
-                title: "Day 4: Walt Disney Studios (Adventure World)",
-                desc: "Focusing on Pixar favorites, world-class staging, and cheap dining options outside the village.",
-                timeline: [
-                    { time: "08:30 AM", text: "Extra Magic Time. Enter the second gate early. Dash straight onto Ratatouille and Spider-Man W.E.B. Adventure.", img: "image_agent_tag_2245738964844624100" },
-                    { time: "02:00 PM", text: "Mickey and the Magician. Cool down inside the premium, air-conditioned theater for a jaw-dropping stage show.", img: "https://images.unsplash.com/photo-1460881680858-30d872d5b530?auto=format&fit=crop&w=300&q=80" },
-                    { time: "06:00 PM", text: "Dinner Alternate. Drive 5 minutes to Val d'Europe mall for an affordable family dinner away from park pricing.", img: "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=300&q=80" }
-                ]
-            },
-            5: {
-                title: "Day 5: Forest Village Relaxation & Meet & Greets",
-                desc: "A relaxed, slower morning pace designed to prevent theme park fatigue.",
-                timeline: [
-                    { time: "09:30 AM", text: "Sleep In. Enjoy a quiet, lazy forest morning. Cook up a full traditional breakfast in the cabin kitchen.", img: "image_agent_tag_2245738964844621693" },
-                    { time: "11:00 AM", text: "Character Autograph Hunt. Enter the parks specifically for character meets, souvenir browsing, and photos.", img: "image_agent_tag_2245738964844624100" }
-                ]
-            },
-            6: {
-                title: "Day 6: The Ultimate Favorites Encore",
-                desc: "Letting the kids control the itinerary to experience their favorite rides one last time.",
-                timeline: [
-                    { time: "08:30 AM", text: "Final Extra Magic Hour. Use this premium morning window to hit the kids' top favorite rides with zero queues.", img: "image_agent_tag_2245738964844624100" },
-                    { time: "08:00 PM", text: "Farewell Night Spectacular. Head back in for one last night of magical drones and castle fireworks display.", img: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=300&q=80" }
-                ]
-            },
-            7: {
-                title: "Day 7: Disney Village Shopping & Journey Home",
-                desc: "Packing up the car and clearing Calais customs smoothly.",
-                timeline: [
-                    { time: "10:00 AM", text: "Cabin Check-out. Pack the car boot, hand in cabin keys, and spend a casual afternoon at Disney Village.", img: "image_agent_tag_2245738964844620718" },
-                    { time: "06:30 PM (FR)", text: "Calais Terminal Arrival. Arrive 2 hours early to clear French customs comfortably and check-in.", img: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=300&q=80" }
-                ]
-            }
-        };
-
-        function switchDay(dayId) {
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.classList.remove('bg-blue-600', 'text-white');
-                btn.classList.add('text-slate-400', 'hover:text-slate-200');
-            });
-            
-            const targetedTab = document.getElementById('tab-' + dayId);
-            targetedTab.classList.remove('text-slate-400', 'hover:text-slate-200');
-            targetedTab.classList.add('bg-blue-600', 'text-white');
-
-            const container = document.getElementById('itineraryContainer');
-            const data = daysData[dayId];
-            
-            let htmlBlock = `<div class="border-b border-slate-800 pb-3">
-                                <h3 class="text-base font-bold text-amber-400">${data.title}</h3>
-                                <p class="text-xs text-slate-400 mt-0.5">${data.desc}</p>
-                             </div>
-                             <div class="space-y-4 pt-2">`;
-            
-            data.timeline.forEach(item => {
-                htmlBlock += `<div class="flex items-start gap-4 p-2 rounded-xl bg-slate-950/40 border border-slate-800/30">
-                                <img src="${item.img}" class="w-16 h-16 object-cover rounded-lg shrink-0 border border-slate-800 bg-slate-900 shadow-md" alt="Timeline scene">
-                                <div class="space-y-0.5">
-                                    <div class="inline-block bg-slate-950 px-2 py-0.5 rounded border border-slate-800 font-mono text-[9px] text-blue-400 font-bold">${item.time}</div>
-                                    <p class="text-xs text-slate-300 leading-relaxed pt-0.5">${item.text}</p>
-                                </div>
-                              </div>`;
-            });
-            
-            htmlBlock += `</div>`;
-            container.innerHTML = htmlBlock;
-        }
-
-        // Initialize view to Day 1
-        switchDay(1);
-    </script>
-</body>
-</html>
+                <button onclick="switchDay(3)" id="tab-3" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition whitespace-nowrap text-slate-40
