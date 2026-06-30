@@ -59,10 +59,10 @@
                 </div>
             </div>
             
-            <!-- Card 2: Disney Magic -->
+            <!-- Card 2: Disney Magic (FIXED IMAGE URL) -->
             <div class="w-72 shrink-0 snap-start bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
                 <div class="h-40 bg-slate-950 relative">
-                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1545232979-8bf34eb9757b?auto=format&fit=crop&w=600&q=80" alt="Disney Park Studio">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1602631985686-2bb06089d50a?auto=format&fit=crop&w=600&q=80" alt="Disneyland Fairy Castle">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
                 </div>
                 <div class="p-4">
@@ -164,10 +164,16 @@
 
             <!-- Main Timed Itinerary Content Container -->
             <div id="itineraryContainer" class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
-                <!-- Data sets injected by JavaScript in Part 2 -->
+                <!-- Data sets injected by JavaScript Engine -->
             </div>
         </div>
     </main>
+
+    <!-- Footer Space -->
+    <footer class="max-w-6xl mx-auto px-4 py-6 text-center text-xs text-slate-600 border-t border-slate-900 mt-6">
+        <p>Lee & Lisette's Shared Travel Portal • Real-Time Dynamic Rendering</p>
+    </footer>
+
     <script>
         // Exact 2026 Live Countdown Configuration Logic
         const launchDate = new Date("August 24, 2026 00:30:00").getTime();
@@ -215,77 +221,68 @@
             document.getElementById("totalDisplay").innerText = "£" + (baseRate + currentSelection).toLocaleString();
         }
 
-        // Full Itinerary Data Objects
+        // Full Itinerary Data Objects with visual image hooks matching the timeline events
         const daysData = {
             1: {
                 title: "Day 1: The Midnight Run & Outbound Border Crossings",
                 desc: "Transit logistics completely mapped out to handle EU biometric check-ins seamlessly.",
                 timeline: [
-                    { time: "12:30 AM (UK)", text: "Departure from Bury. Lisette takes the initial UK driving shift while Lee sleeps with an eye-mask." },
-                    { time: "03:00 AM (UK)", text: "Driver Rest Stop. 30-minute stopover at Leicester Forest East Services (M1) for coffee and fuel." },
-                    { time: "06:00 AM (UK)", text: "Arrive at Folkestone Eurotunnel. Perfect 2-hour buffer window before boarding for mandatory passport control checks." },
-                    { time: "07:00 AM (UK)", text: "Board Le Shuttle Carriage. Driver swap: Lee takes over the driving seat. Enjoy a 35-minute physical rest inside the train." },
-                    { time: "11:05 AM (FR)", text: "Welcome to France! Dynamic shift into Central European Time (+1 hour). Drive off into Calais fully refreshed." },
-                    { time: "01:30 PM (FR)", text: "Pre-Check-In. Drive directly to Davy Crockett Ranch greeting booths. Collect your MagicPass theme park tickets right through the window." },
-                    { time: "02:00 PM (FR)", text: "First Park Window. Head into the parks for an afternoon session. Cabin entry text code arrives at 3:00 PM." }
+                    { time: "12:30 AM (UK)", text: "Departure from Bury. Lisette takes the initial UK driving shift while Lee sleeps with an eye-mask.", img: "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=300&q=80" },
+                    { time: "06:00 AM (UK)", text: "Arrive at Folkestone Eurotunnel. Perfect 2-hour buffer window before boarding for mandatory passport control checks.", img: "https://images.unsplash.com/photo-1542397284385-60101764249a?auto=format&fit=crop&w=300&q=80" },
+                    { time: "11:05 AM (FR)", text: "Welcome to France! Dynamic shift into Central European Time (+1 hour). Drive off into Calais fully refreshed.", img: "https://images.unsplash.com/photo-1503917988258-f87a78e3c995?auto=format&fit=crop&w=300&q=80" },
+                    { time: "01:30 PM (FR)", text: "Pre-Check-In. Drive directly to Davy Crockett Ranch greeting booths. Collect your MagicPass theme park tickets right through the window.", img: "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=300&q=80" }
                 ]
             },
             2: {
                 title: "Day 2: Magic Kingdom Optimization & Deck Chill Out",
                 desc: "Leveraging early entry hours followed by a budget-conscious cabin BBQ break.",
                 timeline: [
-                    { time: "07:45 AM", text: "Cabin Breakfast. Quick breakfast using our own self-catering groceries from the kitchen." },
-                    { time: "08:30 AM", text: "Extra Magic Time. Enter Disneyland Park 60 minutes before the public. Walk straight onto Peter Pan and Big Thunder Mountain." },
-                    { time: "01:00 PM", text: "Midday Escape. Head back to the cabin deck. Fire up the charcoal BBQ for a budget-friendly lunch." },
-                    { time: "02:35 PM", text: "Blue Springs Pool. The kids hit the tropical indoor pool and waterslides while Lee & Lisette recharge." }
+                    { time: "08:30 AM", text: "Extra Magic Time. Enter Disneyland Park 60 minutes before the public. Walk straight onto Peter Pan and Big Thunder Mountain.", img: "https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=300&q=80" },
+                    { time: "01:00 PM", text: "Midday Escape. Head back to the cabin deck. Fire up the charcoal BBQ for a budget-friendly lunch.", img: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=300&q=80" },
+                    { time: "02:35 PM", text: "Blue Springs Pool. The kids hit the tropical indoor pool and waterslides while Lee & Lisette recharge.", img: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=300&q=80" }
                 ]
             },
             3: {
                 title: "Day 3: Parisian Exploration Day Trip",
                 desc: "An incredible mix of double-decker trains, classic architecture, and a relaxing river cruise.",
                 timeline: [
-                    { time: "08:30 AM", text: "Commute. Park for free at Marne-la-Vallée/Chessy station and collect family Zone 1-5 Paris Visite travel cards." },
-                    { time: "09:00 AM", text: "RER A Train. Board the smooth double-decker express train straight to Charles de Gaulle-Étoile (40 mins)." },
-                    { time: "10:00 AM", text: "Arc de Triomphe. Walk out right at the monument base and take family photos down the historic Champs-Élysées." },
-                    { time: "11:30 AM", text: "Trocadéro & Eiffel Tower. Capture the absolute best panoramic views of the Eiffel Tower before heading underneath." },
-                    { time: "02:30 PM", text: "Bateaux Parisiens Cruise. Board the covered 1-hour cruise at the foot of the tower to rest your legs while viewing the Louvre and Notre-Dame." }
+                    { time: "09:00 AM", text: "RER A Train. Board the smooth double-decker express train straight into the heart of Paris (40 mins).", img: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=300&q=80" },
+                    { time: "10:00 AM", text: "Arc de Triomphe. Walk out right at the monument base and take family photos down the historic Champs-Élysées.", img: "https://images.unsplash.com/photo-1509060464153-44667396260f?auto=format&fit=crop&w=300&q=80" },
+                    { time: "11:30 AM", text: "Trocadéro & Eiffel Tower. Capture the absolute best panoramic views of the Eiffel Tower before heading underneath.", img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=300&q=80" },
+                    { time: "02:30 PM", text: "Bateaux Parisiens Cruise. Board the covered 1-hour cruise at the foot of the tower to rest your legs while viewing landmarks.", img: "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=300&q=80" }
                 ]
             },
             4: {
                 title: "Day 4: Walt Disney Studios (Adventure World)",
                 desc: "Focusing on Pixar favorites, world-class staging, and cheap dining options outside the village.",
                 timeline: [
-                    { time: "08:30 AM", text: "Extra Magic Time. Enter the second gate early. Dash straight onto Ratatouille and Spider-Man W.E.B. Adventure." },
-                    { time: "02:00 PM", text: "Mickey and the Magician. Cool down inside the premium, air-conditioned theater for a jaw-dropping stage show." },
-                    { time: "06:00 PM", text: "Dinner Alternate. Drive 5 minutes to Val d'Europe mall for an affordable family dinner away from park pricing." }
+                    { time: "08:30 AM", text: "Extra Magic Time. Enter the second gate early. Dash straight onto Ratatouille and Spider-Man W.E.B. Adventure.", img: "https://images.unsplash.com/photo-1602631985686-2bb06089d50a?auto=format&fit=crop&w=300&q=80" },
+                    { time: "02:00 PM", text: "Mickey and the Magician. Cool down inside the premium, air-conditioned theater for a jaw-dropping stage show.", img: "https://images.unsplash.com/photo-1460881680858-30d872d5b530?auto=format&fit=crop&w=300&q=80" },
+                    { time: "06:00 PM", text: "Dinner Alternate. Drive 5 minutes to Val d'Europe mall for an affordable family dinner away from park pricing.", img: "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=300&q=80" }
                 ]
             },
             5: {
                 title: "Day 5: Forest Village Relaxation & Meet & Greets",
                 desc: "A relaxed, slower morning pace designed to prevent theme park fatigue.",
                 timeline: [
-                    { time: "09:30 AM", text: "Sleep In. Enjoy a quiet, lazy forest morning. Cook up a full traditional breakfast in the cabin kitchen." },
-                    { time: "11:00 AM", text: "Character Autograph Hunt. Enter the parks specifically for character meets, souvenir browsing, and photos." },
-                    { time: "03:00 PM", text: "Lucky Raccoon Arcade. Return to the Ranch village hub for outdoor playgrounds, arcade games, or mini-golf." }
+                    { time: "09:30 AM", text: "Sleep In. Enjoy a quiet, lazy forest morning. Cook up a full traditional breakfast in the cabin kitchen.", img: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=300&q=80" },
+                    { time: "11:00 AM", text: "Character Autograph Hunt. Enter the parks specifically for character meets, souvenir browsing, and photos.", img: "https://images.unsplash.com/photo-1560942485-b2a11cc13456?auto=format&fit=crop&w=300&q=80" }
                 ]
             },
             6: {
                 title: "Day 6: The Ultimate Favorites Encore",
                 desc: "Letting the kids control the itinerary to experience their favorite rides one last time.",
                 timeline: [
-                    { time: "08:30 AM", text: "Final Extra Magic Hour. Use this premium morning window to hit the kids' top favorite rides with zero queues." },
-                    { time: "01:00 PM", text: "Cabin Buffet Lunch. Head back to the deck and clear out the remaining groceries from the fridge." },
-                    { time: "08:00 PM", text: "Farewell Night Spectacular. Head back in for one last night of magical drones and castle fireworks display." }
+                    { time: "08:30 AM", text: "Final Extra Magic Hour. Use this premium morning window to hit the kids' top favorite rides with zero queues.", img: "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=300&q=80" },
+                    { time: "08:00 PM", text: "Farewell Night Spectacular. Head back in for one last night of magical drones and castle fireworks display.", img: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=300&q=80" }
                 ]
             },
             7: {
                 title: "Day 7: Disney Village Shopping & Journey Home",
                 desc: "Packing up the car and clearing Calais customs smoothly.",
                 timeline: [
-                    { time: "10:00 AM", text: "Cabin Check-out. Pack the car boot, hand in cabin keys, and spend a casual afternoon at Disney Village." },
-                    { time: "04:00 PM (FR)", text: "Drive North. Leave the resort area behind and embark on the smooth 2.5-hour drive back up to Calais." },
-                    { time: "06:30 PM (FR)", text: "Calais Terminal Arrival. Arrive 2 hours early to clear French customs comfortably and enjoy a relaxed dinner at the terminal." },
-                    { time: "08:35 PM (UK)", text: "Touchdown in Kent. Re-enter UK time zone (-1 hour). Lisette takes the final driving wheel shift back to Bury while Lee rests." }
+                    { time: "10:00 AM", text: "Cabin Check-out. Pack the car boot, hand in cabin keys, and spend a casual afternoon at Disney Village.", img: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=300&q=80" },
+                    { time: "06:30 PM (FR)", text: "Calais Terminal Arrival. Arrive 2 hours early to clear French customs comfortably and check-in.", img: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=300&q=80" }
                 ]
             }
         };
@@ -310,9 +307,12 @@
                              <div class="space-y-4 pt-2">`;
             
             data.timeline.forEach(item => {
-                htmlBlock += `<div class="flex items-start gap-3">
-                                <div class="bg-slate-950 px-2.5 py-1 rounded border border-slate-800 font-mono text-[10px] text-blue-400 font-bold shrink-0 mt-0.5 min-w-[95px] text-center">${item.time}</div>
-                                <p class="text-xs text-slate-300 leading-relaxed">${item.text}</p>
+                htmlBlock += `<div class="flex items-start gap-4 p-2 rounded-xl bg-slate-950/40 border border-slate-800/30">
+                                <img src="${item.img}" class="w-16 h-16 object-cover rounded-lg shrink-0 border border-slate-800 bg-slate-900 shadow-md" alt="Timeline scene">
+                                <div class="space-y-0.5">
+                                    <div class="inline-block bg-slate-950 px-2 py-0.5 rounded border border-slate-800 font-mono text-[9px] text-blue-400 font-bold">${item.time}</div>
+                                    <p class="text-xs text-slate-300 leading-relaxed pt-0.5">${item.text}</p>
+                                </div>
                               </div>`;
             });
             
@@ -320,7 +320,7 @@
             container.innerHTML = htmlBlock;
         }
 
-        // Initialize display to Day 1
+        // Initialize view to Day 1
         switchDay(1);
     </script>
 </body>
