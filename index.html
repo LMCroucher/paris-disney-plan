@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisette & Lee's Disney 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;600;700&display=swap');
+        .magic-font { font-family: 'Cinzel', serif; }
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-blue-600 selection:text-white">
+
+    <!-- Header Frame -->
+    <header class="relative bg-cover bg-center py-12 px-4 text-center border-b border-slate-900" style="background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.85), rgba(2, 6, 23, 1)), url('https://images.unsplash.com/photo-1545232979-8bf34eb9757b?auto=format&fit=crop&w=1200&q=80');">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-3">August 24 – August 30, 2026</span>
+            <h1 class="magic-font text-3xl md:text-5xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-400 to-amber-200 drop-shadow">
+                Lisette & Lee's Disney Hub
+            </h1>
+            <p class="text-slate-400 text-sm mt-2 max-w-md mx-auto font-light">6-Night Self-Catering Road Trip Strategy</p>
+            
+            <!-- Target Static Countdown Framework -->
+            <div class="grid grid-cols-3 gap-2 max-w-xs mx-auto mt-6 bg-slate-900/90 border border-slate-800 p-3 rounded-xl shadow-xl">
+                <div class="text-center"><span class="block text-xl font-bold text-amber-400 magic-font">05</span><span class="text-[9px] text-slate-400 uppercase tracking-wider">Months</span></div>
+                <div class="text-center"><span class="block text-xl font-bold text-slate-200 magic-font">24</span><span class="text-[9px] text-slate-400 uppercase tracking-wider">Days</span></div>
+                <div class="text-center"><span class="block text-xl font-bold text-blue-400 magic-font">11</span><span class="text-[9px] text-slate-400 uppercase tracking-wider">Hours</span></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        <!-- Interactive Cost Column -->
+        <div class="lg:col-span-1 space-y-6">
+            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 shadow-xl">
+                <h3 class="text-lg font-bold mb-3 flex items-center gap-2"><i class="fa-solid fa-wallet text-amber-400"></i> Trip Cost Matrix</h3>
+                <p class="text-xs text-slate-400 mb-4">Tap items to toggle payment tracking. Budget reflects travel kit savings (£155 saved!).</p>
+                
+                <div class="space-y-3">
+                    <div onclick="toggleItem(this, 2720)" class="p-3 bg-slate-950 rounded-xl border border-slate-800/80 cursor-pointer hover:border-slate-700 transition flex justify-between items-center">
+                        <div class="text-xs"><span class="font-semibold block text-slate-200">Disney Log Cabin</span><span class="text-slate-400">6 Nts + 7-Day Park Hopper</span></div>
+                        <span class="text-blue-400 font-bold text-sm">£2720</span>
+                    </div>
+                    <div onclick="toggleItem(this, 180)" class="p-3 bg-slate-950 rounded-xl border border-slate-800/80 cursor-pointer hover:border-slate-700 transition flex justify-between items-center">
+                        <div class="text-xs"><span class="font-semibold block text-slate-200">Eurotunnel Return</span><span class="text-slate-400">Folkestone ↔ Calais car slot</span></div>
+                        <span class="text-blue-400 font-bold text-sm">£180</span>
+                    </div>
+                    <div onclick="toggleItem(this, 125)" class="p-3 bg-slate-950 rounded-xl border border-slate-800/80 cursor-pointer hover:border-slate-700 transition flex justify-between items-center">
+                        <div class="text-xs"><span class="font-semibold block text-slate-200">Fuel & Tolls</span><span class="text-slate-400">700 Mile loop + A1/A4 routes</span></div>
+                        <span class="text-blue-400 font-bold text-sm">£125</span>
+                    </div>
+                    <div onclick="toggleItem(this, 130)" class="p-3 bg-slate-950 rounded-xl border border-slate-800/80 cursor-pointer hover:border-slate-700 transition flex justify-between items-center">
+                        <div class="text-xs"><span class="font-semibold block text-slate-200">Paris Transit Base</span><span class="text-slate-400">Zone 1-5 passes + Seine Cruise</span></div>
+                        <span class="text-blue-400 font-bold text-sm">£130</span>
+                    </div>
+                    <div onclick="toggleItem(this, 420)" class="p-3 bg-slate-950 rounded-xl border border-slate-800/80 cursor-pointer hover:border-slate-700 transition flex justify-between items-center">
+                        <div class="text-xs"><span class="font-semibold block text-slate-200">Food & Groceries</span><span class="text-slate-400">Cabin cooking + park treats</span></div>
+                        <span class="text-blue-400 font-bold text-sm">£420</span>
+                    </div>
+                </div>
+
+                <!-- Paris Add-on Selector Engine -->
+                <div class="mt-4 pt-4 border-t border-slate-800">
+                    <h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">Paris Day Upgrades</h4>
+                    <select id="parisAddon" onchange="calculateBudget()" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-2.5 text-xs text-slate-200 focus:ring-blue-500">
+                        <option value="0">Base Plan (Sightseeing & Cruise Only) - +£0</option>
+                        <option value="55">🗼 Eiffel Tower 2nd Floor Lifts (Rec!) - +£55</option>
+                        <option value="85">🗼 Eiffel Tower Summit Lifts - +£85</option>
+                        <option value="27">🏛️ Arc de Triomphe Rooftop View - +£27</option>
+                    </select>
+                </div>
+
+                <!-- Live Updates Display Layout -->
+                <div class="mt-4 p-3 bg-slate-950 rounded-xl border border-slate-800 text-center">
+                    <div class="text-[10px] text-slate-400 uppercase tracking-widest">Estimated Total Budget</div>
+                    <div id="totalDisplay" class="text-2xl font-black text-emerald-400 magic-font mt-0.5">£3575</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comprehensive Presentation Slides Column -->
+        <div class="lg:col-span-2 space-y-6">
+            <!-- Cabin Spotlight -->
+            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 shadow-xl space-y-4">
+                <h3 class="text-lg font-bold text-amber-400 flex items-center gap-2"><i class="fa-solid fa-tree"></i> Accommodation Layout</h3>
+                <p class="text-sm text-slate-300">Disney's Davy Crockett Ranch features detached log cabins with separate bedrooms and a full self-catering kitchen configuration.</p>
+                <img class="w-full h-48 object-cover rounded-xl border border-slate-800" src="https://images.unsplash.com/photo-1545232979-8bf34eb9757b?auto=format&fit=crop&w=800&q=80" alt="Cabin visual style reference">
+            </div>
+
+            <!-- Detailed Paris Add-on Breakdown Frame -->
+            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 shadow-xl space-y-4">
+                <h3 class="text-lg font-bold text-blue-400 flex items-center gap-2"><i class="fa-solid fa-monument"></i> Paris Options Breakdown</h3>
+                <p class="text-sm text-slate-300">The base budget completely handles the Zone 1-5 Train passes and river boat tickets. Selecting Option B gives this stunning viewpoint of the city layout without breaking the bank.</p>
+                <img class="w-full h-48 object-cover rounded-xl border border-slate-800" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Eiffel View reference">
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let paidAmount = 0;
+        function toggleItem(element, amount) {
+            element.classList.toggle('border-emerald-500/50');
+            element.classList.toggle('bg-emerald-950/20');
+            calculateBudget();
+        }
+        function calculateBudget() {
+            let base = 3575;
+            let addon = parseInt(document.getElementById('parisAddon').value);
+            document.getElementById('totalDisplay').innerText = '£' + (base + addon);
+        }
+    </script>
+</body>
+</html>
